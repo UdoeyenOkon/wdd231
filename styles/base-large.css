@@ -1,0 +1,42 @@
+@media (min-width: 660px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 24PX auto;
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #dfd7d7;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation li {
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+
+    /* FOOTER */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #D9D4D5;
+    --secondary-color: #191f24;
+    --testing: #efefef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+body {
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    width: 100%;
+    /* background-color: var(--primary-color); */
+    color: #161313;
+}
+
+h1,
+header,
+footer {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 24PX auto 64px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+}
+
+header span {
+    font-size: 1.2rem;
+    /* color: #161313; */
+    color: #5e1403;
+}
+
+/* HAMBURGER NAVIGATION */
+.hamburger {
+    background: none;
+    border: none;
+    color: #5e1403;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+  }
+
+.hamburger.show::before {
+    content: "\00D7";
+    /* font-size: 1.5rem; */
+}
+
+/* NAVIGATION */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: solid 1px #dfd7d7;
+    color: #5e1403;
+    text-align: center;
+}
+
+.navigation li.active {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    text-decoration: overline;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 1rem 10px;
+    text-align: center;
+    
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.social-media a {
+    display: flex;
+    border: solid 1px #dfd7d7;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+}
+
+.social-media img {
+    width: 22px;
+    height: 22px;
+}
+
+.social-media a:hover {
+    background-color: #dbc1bb;
+}
+
+footer div {
+    padding: 10px;
+}
