@@ -1,26 +1,29 @@
 :root {
-    --primary-color: #D9D4D5;
-    --secondary-color: #191f24;
-    --testing: #efefef;
+    --header-footer-background: #191f24;
+    --main-page-background: #D9D4D5;
+    --text-on-header-footer: #f5f0f0;
+    --text-on-main-page: #161313;
+    --button: #605c5c;
+    --text-on-button: #efefef;
 }
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 body {
     font-family: "News Cycle", sans-serif;
     font-weight: 400;
     font-style: normal;
+    min-width: 320px;
 }
 
 main {
-    width: 100%;
-    /* background-color: var(--primary-color); */
-    color: #161313;
+    padding: 10px;
+    background-color: var(--main-page-background);
+    color: var(--text-on-main-page);
 }
 
 h1,
@@ -29,17 +32,19 @@ footer {
     font-family: "Marcellus", serif;
     font-weight: 400;
     font-style: normal;
- }
+}
 
 
 /* HEADER */
 header {
     display: grid;
-    grid-template-columns: 24PX auto 64px;
-    padding: 5px 0 5px 10px;
+    grid-template-columns: 24PX auto 80px;
+    padding: 15px 0 5px 10px;
     align-items: end;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
+    background-color: var(--header-footer-background);
+    color: var(--text-on-header-footer);
 }
 
 header img {
@@ -50,22 +55,21 @@ header img {
 }
 
 header span {
-    font-size: 1.2rem;
-    /* color: #161313; */
-    color: #5e1403;
+    font-size: 1.5rem;
+    color: #eee;
 }
 
 /* HAMBURGER NAVIGATION */
 .hamburger {
     background: none;
     border: none;
-    color: #5e1403;
+    color: white;
     cursor: pointer;
 }
 
 .hamburger::before {
     content: "\2630";
-  }
+}
 
 .hamburger.show::before {
     content: "\00D7";
@@ -84,7 +88,7 @@ header span {
 .navigation ul {
     list-style-type: none;
     margin: 0;
-    padding-left: 0;
+    padding: 10px;
 }
 
 .navigation a {
@@ -92,8 +96,8 @@ header span {
     padding: 10px;
     text-decoration: none;
     border-bottom: solid 1px #dfd7d7;
-    color: #5e1403;
-    text-align: center;
+    color: var(--text-on-main-page);
+    text-align: start;
 }
 
 .navigation li.active {
@@ -109,7 +113,9 @@ header span {
 footer {
     padding: 1rem 10px;
     text-align: center;
-    
+    background-color: var(--header-footer-background);
+    color: var(--text-on-header-footer);
+
 }
 
 .social-media {
@@ -126,6 +132,7 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 22px;
+    background-color: var(--text-on-button);
 }
 
 .social-media img {
@@ -140,3 +147,57 @@ footer {
 footer div {
     padding: 10px;
 }
+
+/* Certificate */
+.cert-courses ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.cert-courses a {
+    display: block;
+    border: solid 1px #dfd7d7;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-on-button);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cert-courses li {
+    list-style-type: none;
+    flex: 1 1 100%;
+}
+
+.cert-courses a:hover {
+    background-color: #dbc1bb;
+}
+
+/* Main*/
+h1 {
+    margin-left: 10px;
+}
+.about-me p {
+    margin-bottom: 1em;
+    /* text-indent: 2em; */
+}
+
+h2 {
+    background-color: var(--header-footer-background);
+    color: var(--text-on-header-footer);
+    padding: 5px;
+    text-align: center;
+  }
+
+  main {
+    display: grid;
+  }
+
+  .photo img{
+    width: 100%;
+    height: auto;
+  }
