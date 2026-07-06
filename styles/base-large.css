@@ -60,4 +60,8 @@
             grid-column: span 3;
             grid-row: 2/3;
         }
+
+        #course-card {
+            grid-template-columns: 1fr 1fr;
+        }
 }

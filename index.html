@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web site-Wdd231-Web Front End Development-Udoeyen Okon</title>
-    <meta name="description"content="My name is Udoeyen OKON. I am studying Web Web Front End Development (WDD231) and I am using this page for self introduction.">
+    <meta name="description"
+        content="My name is Udoeyen OKON. I am studying Web Web Front End Development (WDD231) and I am using this page for self introduction.">
     <meta name="author" content="Udoeyen Aniefiok Okon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="styles/base-large.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
@@ -39,28 +41,37 @@
     <h1>Home</h1>
 
     <main>
-        
+
         <section class="about-me">
             <h2>About Me</h2>
-            <p>My name is Udoeyen Okon, a registered Quantity Surveyor and certified Project Manager with over 15 years of
+            <p>My name is Udoeyen Okon, a registered Quantity Surveyor and certified Project Manager with over 15 years
+                of
                 experience
-                in project management and contract administration. Backing up my experiences include a Project Management
+                in project management and contract administration. Backing up my experiences include a Project
+                Management
                 certificate, a
                 bachelor’s degree in quantity surveying, and a master’s degree in construction management.
-                With my team of professional Architects, Engineers, and surveyors, we established Kaevikon Ventures in 2012. Our
+                With my team of professional Architects, Engineers, and surveyors, we established Kaevikon Ventures in
+                2012. Our
                 goal is
-                to optimize the commercial and quality successes of our client’s projects by delivering world-class services in
+                to optimize the commercial and quality successes of our client’s projects by delivering world-class
+                services in
                 Building
                 and infrastructural development.</p>
-            
-            <p>We have coordinated design and construction teams to initiate and execute over 300 complex maintenance and
-                construction
-                projects. We leverage our software skills in specialized software, including MS Project, Excel, Revit, AutoCAD,
-                QS-Cad,
-                and AI for project planning and scheduling to enhance project efficiency. We recently recovered over ₦8 billion in
-                contractual claims for a client and successfully managed a 250-unit housing estate project, completing it on time
+
+            <p>We have coordinated design and construction teams to initiate and execute over 300 complex maintenance
                 and
-                within budget. We are detail-oriented, ethical, transparent, and committed to contributing to your projects to
+                construction
+                projects. We leverage our software skills in specialized software, including MS Project, Excel, Revit,
+                AutoCAD,
+                QS-Cad,
+                and AI for project planning and scheduling to enhance project efficiency. We recently recovered over ₦8
+                billion in
+                contractual claims for a client and successfully managed a 250-unit housing estate project, completing
+                it on time
+                and
+                within budget. We are detail-oriented, ethical, transparent, and committed to contributing to your
+                projects to
                 ensure
                 100% performance and client satisfaction.</p>
         </section>
@@ -71,12 +82,15 @@
         <section class="cert-courses">
             <h2>Web Certificate Courses</h2>
             <ul>
-                <li><a href="#">All</a></li>
-                <li><a href="#">CSE</a></li>
-                <li><a href="#">WDD</a></li>
+                <li><a href="#" id="all">All</a></li>
+                <li><a href="#" id="cse">CSE</a></li>
+                <li><a href="#" id="wdd">WDD</a></li>
             </ul>
+
             <div id="course-card"></div>
-            <p class="credits"></p>
+
+            <p id="credit"></p>
+
         </section>
     </main>
     <footer>
