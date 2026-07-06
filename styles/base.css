@@ -19,12 +19,6 @@ body {
     min-width: 320px;
 }
 
-main {
-    padding: 10px;
-    background-color: var(--main-page-background);
-    color: var(--text-on-main-page);
-}
-
 h1,
 header,
 footer {
@@ -227,6 +221,9 @@ h2 {
 
 main {
     display: grid;
+    padding: 10px;
+     background-color: var(--main-page-background);
+     color: var(--text-on-main-page);
 }
 
 .photo img {

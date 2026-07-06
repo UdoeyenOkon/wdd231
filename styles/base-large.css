@@ -41,19 +41,24 @@
             gap: 10px;
         }
 
+        h1 {
+            grid-column: span 3;
+            grid-row: 1/2;
+        }
+
         .about-me {
             grid-column: 1/3;
-            grid-row: 1/2;
+            grid-row: 2/3;
         }
 
         .photo {
             grid-column: 3/4;
-            grid-row: 1/2;
+            grid-row: 2/3;
         }
 
         .cert-courses {
             grid-column: span 3;
-            grid-row: 2/3;
+            grid-row: 3/4;
         }
 
         #course-card {
