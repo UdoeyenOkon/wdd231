@@ -23,11 +23,6 @@
         column-gap: 20px;
     }
 
-    .navigation li {
-        /* background-color: var(--button); */
-        /* flex: 1 1 100%; */
-    }
-
     .navigation a {
         border: none;
     }
