@@ -160,7 +160,7 @@ footer div {
     border-radius: 5px;
     text-align: center;
     height: 44px;
-    color:var(--text-on-main-page);
+    color: var(--text-on-main-page);
 }
 
 .cert-courses li {
@@ -222,8 +222,8 @@ h2 {
 main {
     display: grid;
     padding: 10px;
-     background-color: var(--main-page-background);
-     color: var(--text-on-main-page);
+    background-color: var(--main-page-background);
+    color: var(--text-on-main-page);
 }
 
 .photo img {
