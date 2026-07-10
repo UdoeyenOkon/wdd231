@@ -1,0 +1,239 @@
+:root {
+    --header-footer-background: #191f24;
+    --main-page-background: #D9D4D5;
+    --text-on-header-footer: #f5f0f0;
+    --text-on-main-page: #161313;
+    --button: #605c5c;
+    --text-on-button: #efefef;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* min-width: 320px; */
+}
+
+h1,
+header,
+footer {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 24PX auto 80px;
+    padding: 15px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: var(--header-footer-background);
+    color: var(--text-on-header-footer);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+}
+
+header span {
+    font-size: 1.8rem;
+    color: #eee;
+}
+
+/* HAMBURGER NAVIGATION */
+.hamburger {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    /* font-size: 1.5rem; */
+}
+
+/* NAVIGATION */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.navigation a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: solid 1px #dfd7d7;
+    color: var(--text-on-main-page);
+    text-align: start;
+}
+
+.active {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    text-decoration: overline;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 1rem 10px;
+    text-align: center;
+    background-color: var(--header-footer-background);
+    color: var(--text-on-header-footer);
+
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.social-media a {
+    display: flex;
+    border: solid 1px #dfd7d7;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: var(--text-on-button);
+}
+
+.social-media img {
+    width: 22px;
+    height: 22px;
+}
+
+.social-media a:hover {
+    background-color: #dbc1bb;
+}
+
+footer div {
+    padding: 10px;
+}
+
+/* Certificate */
+.cert-courses ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.cert-courses a {
+    display: block;
+    border: solid 1px #dfd7d7;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-on-button);
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    height: 44px;
+    color: var(--text-on-main-page);
+}
+
+.cert-courses li {
+    list-style-type: none;
+    flex: 1 1 100%;
+}
+
+.cert-courses a:hover {
+    background-color: #dbc1bb;
+}
+
+#course-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+.completed {
+    background-color: #dbc1bb;
+    display: block;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+.not-completed {
+    background-color: #efe6e4;
+    display: block;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+#credit {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+/* Main*/
+
+h1 {
+    margin-left: 10px;
+}
+
+.about-me p {
+    margin-bottom: 1em;
+    padding: 15px;
+    /* text-indent: 2em; */
+}
+
+h2 {
+    background-color: var(--header-footer-background);
+    color: var(--text-on-header-footer);
+    padding: 5px;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    padding: 10px;
+    background-color: var(--main-page-background);
+    color: var(--text-on-main-page);
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    /* width: 300px;
+    height: 400px;
+    object-fit: cover;
+    padding: 15px; */
+    margin: 0 auto;
+    display: block;
+}

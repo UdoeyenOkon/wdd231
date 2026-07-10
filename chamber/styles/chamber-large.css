@@ -1,0 +1,67 @@
+@media (min-width: 660px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 24PX auto;
+    }
+
+    body {
+        /* max-width: 1000px; */
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #dfd7d7;
+    }
+
+    .navigation ul {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+
+    /* FOOTER */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    /* Main */
+        main {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        h1 {
+            grid-column: span 3;
+            grid-row: 1/2;
+        }
+
+        .about-me {
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+
+        .photo {
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+        .cert-courses {
+            grid-column: span 3;
+            grid-row: 3/4;
+        }
+
+        #course-card {
+            grid-template-columns: 1fr 1fr;
+        }
+}
