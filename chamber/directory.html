@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-site for Chamber of Commerce, Lagos-Udoeyen Okon</title>
+    <meta name="description"
+        content="This page layout the bussiness cards for the various bussiness members associated with the Chamber">
+    <meta name="author" content="Udoeyen Aniefiok Okon">
+    <meta property="og:title" content="Chamber of Commerce, Lagos">
+    <meta property="og:description"
+        content="This page let you provide your bussiness contacts information to your prospective customers and partners. You will also get to learn about the contacts of bussinesses and competitors near you.">
+    <meta property="og:url" content="https://udoeyenokon.github.io/wdd231/chamber.html">
+    <meta property="og:image" content="https://udoeyenokon.github.io/wdd231/chamber/images/social-media-image.webp">
+    <link rel="icon" href="images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap&swap" rel="stylesheet" media=""
+        onload="if(media!='all')media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=News+Cycle:wght@700&display=swap&swap"
+        rel="stylesheet" media="" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" width="1" height="1" alt="logo">
+        <span>Udoeyen Okon</span>
+        <button id="ham-button" class="hamburger">Menu</button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>WDD231 Home Page </h1>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>My name is Udoeyen Okon, a registered Quantity Surveyor and certified Project Manager with over 15 years
+                of
+                experience
+                in project management and contract administration. Backing up my experiences include a Project
+                Management
+                certificate, a
+                bachelor’s degree in quantity surveying, and a master’s degree in construction management.
+                With my team of professional Architects, Engineers, and surveyors, we established Kaevikon Ventures in
+                2012. Our
+                goal is
+                to optimize the commercial and quality successes of our client’s projects by delivering world-class
+                services in
+                Building
+                and infrastructural development.</p>
+
+            <p>We have coordinated design and construction teams to initiate and execute over 300 complex maintenance
+                and
+                construction
+                projects. We leverage our software skills in specialized software, including MS Project, Excel, Revit,
+                AutoCAD,
+                QS-Cad,
+                and AI for project planning and scheduling to enhance project efficiency. We recently recovered over ₦8
+                billion in
+                contractual claims for a client and successfully managed a 250-unit housing estate project, completing
+                it on time
+                and
+                within budget. We are detail-oriented, ethical, transparent, and committed to contributing to your
+                projects to
+                ensure
+                100% performance and client satisfaction.</p>
+        </section>
+        <section class="photo">
+            <h2>My Photo</h2>
+            <img src="images/potrait.webp" width="300" height="400" alt="My Photo" loading="lazy">
+        </section>
+        <section class="cert-courses">
+            <h2>Web Certificate Courses</h2>
+            <ul>
+                <li><a href="#" id="all">All</a></li>
+                <li><a href="#" id="cse">CSE</a></li>
+                <li><a href="#" id="wdd">WDD</a></li>
+            </ul>
+
+            <div id="course-card"></div>
+
+            <p id="credit"></p>
+
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Contact:</h3>
+            <p>152, Ekpri Nsukara road,</p>
+            <p>Uyo-Akwa Ibom State</p>
+            <p><span>Telephone:</span>+234 803 675 0522</p>
+            <p><span>Email:</span>okonudoeyen@gmail.com</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://web.facebook.com/login/" target="_blank"><img src="images/facebook.svg" alt="facebook"
+                    width="16" height="16"></a>
+            <a href="https://x.com/twitt_login?lang=en" target="_blank"><img src="images/twitter-x.svg"
+                    alt="Twitter twitter-x" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/udoeyen-okon-a13135124/" target="_blank"><img src="images/linkedin.svg"
+                    alt="linkedin" width="16" height="16"></a>
+            <a href="https://github.com/UdoeyenOkon" target="_blank"><img src="images/github.svg" alt="Github"
+                    width="16" height="16"></a>
+
+        </div>
+
+        <div>
+            <p>©<span id="CurrentYear"></span> | Udoeyen OKON | Nigeria</p>
+            <p class="modified">Last Modified: <span id="LastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
