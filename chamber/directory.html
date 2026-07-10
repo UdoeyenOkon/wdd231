@@ -13,7 +13,7 @@
         content="This page let you provide your bussiness contacts information to your prospective customers and partners. You will also get to learn about the contacts of bussinesses and competitors near you.">
     <meta property="og:url" content="https://udoeyenokon.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content="https://udoeyenokon.github.io/wdd231/chamber/images/social-media-image.webp">
-    <link rel="icon" href="images/favicon.jpg">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap&swap" rel="stylesheet" media=""
@@ -25,79 +25,41 @@
     <link rel="stylesheet" href="styles/chamber-large.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/logo.svg" width="1" height="1" alt="logo">
-        <span>Udoeyen Okon</span>
-        <button id="ham-button" class="hamburger">Menu</button>
+        <div class="identity">
+            <img src="images/favicon.ico" width="1" height="1" alt="logo">
+            <span>Udoeyen Okon</span>
+        </div>
+        <div class="way-finding">
+            <button id="ham-button" class="hamburger">Menu</button>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+            <img src="#" width="1" height="1" alt="background mode">
+        </div>
+ 
     </header>
-    <nav id="nav-bar" class="navigation">
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Final</a></li>
-
-        </ul>
-    </nav>
 
     <main>
+        <h1>Directory</h2>
 
-        <h1>WDD231 Home Page </h1>
-
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p>My name is Udoeyen Okon, a registered Quantity Surveyor and certified Project Manager with over 15 years
-                of
-                experience
-                in project management and contract administration. Backing up my experiences include a Project
-                Management
-                certificate, a
-                bachelor’s degree in quantity surveying, and a master’s degree in construction management.
-                With my team of professional Architects, Engineers, and surveyors, we established Kaevikon Ventures in
-                2012. Our
-                goal is
-                to optimize the commercial and quality successes of our client’s projects by delivering world-class
-                services in
-                Building
-                and infrastructural development.</p>
-
-            <p>We have coordinated design and construction teams to initiate and execute over 300 complex maintenance
-                and
-                construction
-                projects. We leverage our software skills in specialized software, including MS Project, Excel, Revit,
-                AutoCAD,
-                QS-Cad,
-                and AI for project planning and scheduling to enhance project efficiency. We recently recovered over ₦8
-                billion in
-                contractual claims for a client and successfully managed a 250-unit housing estate project, completing
-                it on time
-                and
-                within budget. We are detail-oriented, ethical, transparent, and committed to contributing to your
-                projects to
-                ensure
-                100% performance and client satisfaction.</p>
-        </section>
-        <section class="photo">
-            <h2>My Photo</h2>
-            <img src="images/potrait.webp" width="300" height="400" alt="My Photo" loading="lazy">
-        </section>
-        <section class="cert-courses">
-            <h2>Web Certificate Courses</h2>
-            <ul>
-                <li><a href="#" id="all">All</a></li>
-                <li><a href="#" id="cse">CSE</a></li>
-                <li><a href="#" id="wdd">WDD</a></li>
-            </ul>
-
-            <div id="course-card"></div>
-
-            <p id="credit"></p>
-
-        </section>
+        <div class="display-buttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+    
+    
     </main>
+
     <footer>
         <div>
             <h3>Contact:</h3>

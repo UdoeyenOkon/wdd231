@@ -30,26 +30,48 @@ footer {
 
 /* HEADER */
 header {
-    display: grid;
-    grid-template-columns: 24PX auto 80px;
-    padding: 15px 0 5px 10px;
-    align-items: end;
-    border-bottom: solid 1px #ddd;
-    column-gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0 5px 10px;
+    align-items: start;
+    /* border-bottom: solid 1px #ddd; */
+    margin: 0 auto;
+    column-gap: 20px;
     background-color: var(--header-footer-background);
     color: var(--text-on-header-footer);
 }
 
-header img {
+.identity {
+    display: flex;
+    column-gap: 5px;
+    align-items: start;
+}
+
+.way-finding {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.identity img {
+    width: 32px;
+    height: 32px;
+    padding-bottom: 5px;
     display: block;
-    width: 100%;
-    height: auto;
-    padding-bottom: 4px;
+    border: 1px solid white;
+    background-color: #ca310e;
+    border-radius: 2px;
+}
+
+.way-finding img {
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
 }
 
 header span {
-    font-size: 1.8rem;
-    color: #eee;
+    font-size: 1.4em;
 }
 
 /* HAMBURGER NAVIGATION */
@@ -58,6 +80,7 @@ header span {
     border: none;
     color: white;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .hamburger::before {
@@ -88,13 +111,13 @@ header span {
     display: block;
     padding: 10px;
     text-decoration: none;
-    border-bottom: solid 1px #dfd7d7;
-    color: var(--text-on-main-page);
+    color: var(--text-on-header-footer);
     text-align: start;
 }
 
 .active {
-    background-color: #eee;
+    background-color: #525d69;
+    border-radius: 5px;
 }
 
 .navigation a:hover {
@@ -141,7 +164,7 @@ footer div {
     padding: 10px;
 }
 
-/* Certificate */
+/* Certificate
 .cert-courses ul {
     display: flex;
     flex-direction: row;
@@ -197,7 +220,7 @@ footer div {
 #credit {
     text-align: center;
     padding-bottom: 15px;
-}
+} */
 
 
 /* Main*/
@@ -206,34 +229,7 @@ h1 {
     margin-left: 10px;
 }
 
-.about-me p {
-    margin-bottom: 1em;
-    padding: 15px;
-    /* text-indent: 2em; */
-}
-
-h2 {
-    background-color: var(--header-footer-background);
-    color: var(--text-on-header-footer);
-    padding: 5px;
-    text-align: center;
-}
-
 main {
-    display: grid;
-    padding: 10px;
     background-color: var(--main-page-background);
     color: var(--text-on-main-page);
-}
-
-.photo img {
-    width: 100%;
-    height: auto;
-    padding: 15px;
-    /* width: 300px;
-    height: 400px;
-    object-fit: cover;
-    padding: 15px; */
-    margin: 0 auto;
-    display: block;
 }
