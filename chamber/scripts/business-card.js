@@ -14,7 +14,7 @@ listbutton.addEventListener("click", () => {
     display.classList.remove("grid");
 });
 
-const url = "https://udoeyenokon.github.io/wdd231/chamber/chamber/data/members.json";
+const url = "https://udoeyenokon.github.io/wdd231/chamber/data/members.json";
 const businessCard = document.querySelector("#business-card");
 async function getBusinessData() {
     const response = await fetch(url);
