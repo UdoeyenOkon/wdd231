@@ -19,7 +19,8 @@ const businessCard = document.querySelector("#business-card");
 async function getBusinessData() {
     const response = await fetch(url);
     const data = await response.json();
-    displayBusinesses(data.businesses);
+    console.log(data);
+    // displayBusinesses(data.businesses);
 };
 
 getBusinessData();
