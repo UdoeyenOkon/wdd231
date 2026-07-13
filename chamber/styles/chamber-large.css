@@ -2,13 +2,15 @@
 
     header {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 2fr;
         }
 
         .identity {
             grid-column: 1/2;
-            align-items: end;
+            align-items: center;
+            margin-top: 15px;
         }
+        
 
         .way-finding {
             grid-column: 2/3;

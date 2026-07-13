@@ -1,87 +1,85 @@
 {
-    "companies": 
-    [
-    {
-        "companyName": "Kaevikon Construction Limited",
-        "companyAddress": "152, Ekpri Nsukara Road, Uyo, Akwa Ibom State, Nigeria",
-        "companyPhoneNumber": "+2348036750522",
-        "companyWebsiteUrl": "www.kaevikon-construction.org",
-        "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/kaevikon-construction.webp",
-        "membershipLevel": 3,
-        "stockIsQuoted": true
-    },
-    {
-        "companyName": "Kaevikon Fish Ventures",
-        "companyAddress": "3, Steve Ibanga Avenue, Sautten Green Estate, Idu-Uruan, Akwa Ibom State, Nigeria",
-        "companyPhoneNumber": "+2348127801616",
-        "companyWebsiteUrl": "www.kaevikonfish.org",
-        "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/kaevikon-fish.webp",
-        "membershipLevel": 1,
-        "stockIsQuoted": false
-    },
-    {
-        "companyName": "Ekyen Beauty Saloon",
-        "companyAddress": "78, Nwaniba Road, Uyo, Akwa Ibom State, Nigeria",
-        "companyPhoneNumber": "+2348063498540",
-        "companyWebsiteUrl": "www.ekyenbeautysaloon.com",
-        "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/ekyen-boutique.webp",
-        "membershipLevel": 2,
-        "stockIsQuoted": false
-    },
-    {
-        "companyName": "Glamini Make-up",
-        "companyAddress": "3, Wellingto Bassey Way, Uyo, Akwa Ibom State, Nigeria",
-        "companyPhoneNumber": "+2348147569213",
-        "companyWebsiteUrl": "www.glaminimakeup.com",
-        "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/glamini-makeup.webp",
-        "membershipLevel": 2,
-        "stockIsQuoted": false
-    },
-    {
-        "companyName": "Globe Tomato Ltd",
-        "companyAddress": "115 Olusegun Obasenjo Way, Uyo, Akwa Ibom State, Nigeria",
-        "companyPhoneNumber": "+2348028446325",
-        "companyWebsiteUrl": "www.globetomatoltd.org",
-        "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/tomato-gargen.webp",
-        "membershipLevel": 3,
-        "stockIsQuoted": true
-    },
-    {
-        "companyName": "Jubillee Schools",
-        "companyAddress": "Ikot Eyo, Nsit Ubium LGA, Akwa Ibom State, Nigeria",
-        "companyPhoneNumber": "+2348032468805",
-        "companyWebsiteUrl": "www.jubilleeintlschools.edu",
-        "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/jubillee-schools.webp",
-        "membershipLevel": 3,
-        "stockIsQuoted": false
-    },
-    {
-        "companyName": "Cocoa-Nut Refining Company",
-        "companyAddress": "340 Oron Road, Uyo, Akwa Ibom State, Nigeria",
-        "companyPhoneNumber": "+2348036643826",
-        "companyWebsiteUrl": "www.cocanutrefining.org",
-        "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/cocoanut-plantation.webp",
-        "membershipLevel": 3,
-        "stockIsQuoted": true
-    },
-    {
-        "companyName": "Big Joe Boutique & Stores",
-        "companyAddress": "1, IBB Avenue, Uyo, Akwa Ibom State, Nigeria",
-        "companyPhoneNumber": "+2348147064463",
-        "companyWebsiteUrl": "www.bigjoeboutique.com",
-        "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/big-joe-boutique.webp",
-        "membershipLevel": 1,
-        "stockIsQuoted": false
-    },
-    {
-        "companyName": "John Nwankwo Nigeria Limited",
-        "companyAddress": "6, Uruan Street, Uyo, Akwa Ibom State, Nigeria",
-        "companyPhoneNumber": "+2347088115",
-        "companyWebsiteUrl": "www.johnnwankwoltd.org",
-        "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/John-nwankwo-company.webp",
-        "membershipLevel": 3,
-        "stockIsQuoted": true
-    }
+    "companies": [
+        {
+            "companyName": "Kaevikon Construction Limited",
+            "companyAddress": "152, Ekpri Nsukara Road, Uyo, Akwa Ibom State, Nigeria",
+            "companyPhoneNumber": "+2348036750522",
+            "companyWebsiteUrl": "www.kaevikon-construction.org",
+            "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/kaevikon-construction.webp",
+            "membershipLevel": 3,
+            "stockIsQuoted": true
+        },
+        {
+            "companyName": "Kaevikon Fish Ventures",
+            "companyAddress": "3, Steve Ibanga Avenue, Sautten Green Estate, Idu-Uruan, Akwa Ibom State, Nigeria",
+            "companyPhoneNumber": "+2348127801616",
+            "companyWebsiteUrl": "www.kaevikonfish.org",
+            "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/kaevikon-fish.webp",
+            "membershipLevel": 1,
+            "stockIsQuoted": false
+        },
+        {
+            "companyName": "Ekyen Beauty Saloon",
+            "companyAddress": "78, Nwaniba Road, Uyo, Akwa Ibom State, Nigeria",
+            "companyPhoneNumber": "+2348063498540",
+            "companyWebsiteUrl": "www.ekyenbeautysaloon.com",
+            "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/saloon.webp",
+            "membershipLevel": 2,
+            "stockIsQuoted": false
+        },
+        {
+            "companyName": "Glamini Make-up",
+            "companyAddress": "3, Wellingto Bassey Way, Uyo, Akwa Ibom State, Nigeria",
+            "companyPhoneNumber": "+2348147569213",
+            "companyWebsiteUrl": "www.glaminimakeup.com",
+            "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/glamini-makeup.webp",
+            "membershipLevel": 2,
+            "stockIsQuoted": false
+        },
+        {
+            "companyName": "Globe Tomato Ltd",
+            "companyAddress": "115 Olusegun Obasenjo Way, Uyo, Akwa Ibom State, Nigeria",
+            "companyPhoneNumber": "+2348028446325",
+            "companyWebsiteUrl": "www.globetomatoltd.org",
+            "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/tomato-gargen.webp",
+            "membershipLevel": 3,
+            "stockIsQuoted": true
+        },
+        {
+            "companyName": "Jubillee Schools",
+            "companyAddress": "Ikot Eyo, Nsit Ubium LGA, Akwa Ibom State, Nigeria",
+            "companyPhoneNumber": "+2348032468805",
+            "companyWebsiteUrl": "www.jubilleeintlschools.edu",
+            "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/jubillee-schools.webp",
+            "membershipLevel": 3,
+            "stockIsQuoted": false
+        },
+        {
+            "companyName": "Cocoa-Nut Refining Company",
+            "companyAddress": "340 Oron Road, Uyo, Akwa Ibom State, Nigeria",
+            "companyPhoneNumber": "+2348036643826",
+            "companyWebsiteUrl": "www.cocanutrefining.org",
+            "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/cocoanut-plantation.webp",
+            "membershipLevel": 3,
+            "stockIsQuoted": true
+        },
+        {
+            "companyName": "Big Joe Boutique & Stores",
+            "companyAddress": "1, IBB Avenue, Uyo, Akwa Ibom State, Nigeria",
+            "companyPhoneNumber": "+2348147064463",
+            "companyWebsiteUrl": "www.bigjoeboutique.com",
+            "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/big-joe-boutique.webp",
+            "membershipLevel": 1,
+            "stockIsQuoted": false
+        },
+        {
+            "companyName": "John Nwankwo Nigeria Limited",
+            "companyAddress": "6, Uruan Street, Uyo, Akwa Ibom State, Nigeria",
+            "companyPhoneNumber": "+2347088115",
+            "companyWebsiteUrl": "www.johnnwankwoltd.org",
+            "imageUrl": "https://udoeyenokon.github.io/wdd231/chamber/images/John-nwankwo-company.webp",
+            "membershipLevel": 3,
+            "stockIsQuoted": true
+        }
     ]
 }
-
