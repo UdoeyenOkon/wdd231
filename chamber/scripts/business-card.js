@@ -11,10 +11,14 @@ gridbutton.addEventListener("click", () => {
 
 listbutton.addEventListener("click", () => {
     cardToDisplay.classList.add("list");
-    cardToDisplay.classList.remove("grid-card");
+    cardToDisplay.classList.remove("grid-card");   
 });
 
-const url = "https://udoeyenokon.github.io/wdd231/chamber/data/members.json";
+document.getElementById('reload').addEventListener('click', getBusinessData);
+
+
+
+const url = `https://udoeyenokon.github.io/wdd231/chamber/chamber/data/members2.json${new Date().getTime()}`;
 const businessCard = document.querySelector("#business-card");
 async function getBusinessData() {
     const response = await fetch(url);
@@ -26,6 +30,7 @@ async function getBusinessData() {
 getBusinessData();
 
 const displayBusinesses = (companies) => {
+    cardToDisplay.innerHTML = ''; // Clear existing cards
     companies.forEach(company => {
         let card = document.createElement("section");
         let businessName = document.createElement("h2");
