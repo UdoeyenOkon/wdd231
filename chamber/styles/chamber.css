@@ -180,11 +180,11 @@ main {
     padding: 0.5rem;
     background-color: #333;
     text-align: center;
+}
 
-    button {
-        padding: 0.5rem 1rem;
-        font-weight: 700;
-    }
+.display-buttons button {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
 }
 
 section {
@@ -220,80 +220,67 @@ section {
     padding: 10px;
 }
 
-.info website {
-    color: var(--text-on-main-page);
-}
-
 .grid-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 5px;
     align-items: center;
+}
 
-    section {
+.grid-card section {
+    text-align: center;
+}
 
-        text-align: center;
+.grid-card section>* {
+    margin: 0.1rem;
+}
 
-        &>* {
-            margin: 0.1rem;
-        }
-    }
-
-    img {
-        border: 1px solid #fff;
-        box-shadow: 0 0 1rem #4a3939;
-    }
+.grid-card img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 1rem #4a3939;
 }
 
 .list {
     display: flex;
     flex-direction: column;
-
-    section {
-        display: flex;
-        flex-direction: column;
-
-        margin: 0;
-        padding: 0.25rem;
-        text-align: start;
-
-        .tittle {
-            display: flex;
-            flex-direction: column;
-            border-bottom: none;
-        }
-
-        .info {
-        display: flex;
-        flex-direction: column;
-        }
-
-        ;
-
-        .logo {
-            display: flex;
-        }
-
-        ;
-
-        &>* {
-            margin: 0 1rem;
-        }
-
-        img {
-            display: none;
-        }
-
-        h3 {
-            font-size: 1rem;
-        }
-
-        &:nth-child(even) {
-            background-color: #f7e9e9;
-        }
-    }
 }
 
+.list section {
+    margin: 0;
+    padding: 0.25rem;
+    text-align: start;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+    background-color: #f7e9e9;
+}
+
+.list .title {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+}
+
+.list .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.list .logo {
+    display: flex;
+}
 section img {
     width: 100%;
     height: auto;
