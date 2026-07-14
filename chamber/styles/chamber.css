@@ -186,19 +186,10 @@ main {
     padding: 0.5rem 1rem;
     font-weight: 700;
 }
-#business-card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit);
-    grid-gap: 5px;
-    align-items: center;
-}
-
 #business-card img {
     width: 100%;
     height: auto;
 }
-
-
 
 .grid-card {
     display: grid;
