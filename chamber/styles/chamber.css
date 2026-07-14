@@ -186,6 +186,27 @@ main {
     padding: 0.5rem 1rem;
     font-weight: 700;
 }
+#business-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    grid-gap: 5px;
+    align-items: center;
+}
+
+#business-card img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+    /* border-bottom: 1px rgb(56, 53, 53) solid; */
+}
 
 section {
     border: 1px solid rgb(0 0 0 / 10%);
@@ -220,13 +241,6 @@ section {
     padding: 10px;
 }
 
-.grid-card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 5px;
-    align-items: center;
-    /* border-bottom: 1px rgb(56, 53, 53) solid; */
-}
 
 .grid-card section {
     text-align: center;
@@ -239,6 +253,8 @@ section {
 .grid-card img {
     border: 1px solid #fff;
     box-shadow: 0 0 1rem #4a3939;
+    width: 100%;
+        height: auto;
 }
 
 .list {
@@ -282,8 +298,4 @@ section {
 
 .list .logo {
     display: none;
-}
-section img {
-    width: 100%;
-    height: auto;
 }

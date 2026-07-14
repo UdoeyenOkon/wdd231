@@ -56,22 +56,9 @@ const displayBusinesses = (companies) => {
         image.setAttribute('width', '400');
         image.setAttribute('height', '533');
 
-        // address.setAttribute('class', 'address');
-        // telephone.setAttribute('class', 'telephone');
-        // grade.setAttribute('class', 'grade');
-        // isQuoted.setAttribute('class', 'isQuoted');
-
         tittleDiv.setAttribute('class', 'tittle');
         logoeDiv.setAttribute('class', 'logo');
         infoDiv.setAttribute('class', 'info');
-
-        // card.appendChild(image);
-        // card.appendChild(businessName);
-        // card.appendChild(address);
-        // card.appendChild(telephone);
-        // card.appendChild(website);
-        // card.appendChild(grade);
-        // card.appendChild(isQuoted);
 
         tittleDiv.appendChild(businessName);
         tittleDiv.appendChild(address);
