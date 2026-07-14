@@ -225,6 +225,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 5px;
     align-items: center;
+    /* border-bottom: 1px rgb(56, 53, 53) solid; */
 }
 
 .grid-card section {
@@ -241,14 +242,15 @@ section {
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    
 }
 
 .list section {
     margin: 0;
     padding: 0.25rem;
-    text-align: start;
+    text-align: center;
 }
 
 .list section>* {
@@ -268,18 +270,18 @@ section {
 }
 
 .list .title {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     border-bottom: none;
 }
 
 .list .info {
-    display: flex;
-    flex-direction: column;
+   display: grid;
+   grid-template-columns: 1fr;
 }
 
 .list .logo {
-    display: flex;
+    display: none;
 }
 section img {
     width: 100%;
