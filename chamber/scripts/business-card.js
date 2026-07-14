@@ -11,19 +11,19 @@ gridbutton.addEventListener("click", () => {
 
 listbutton.addEventListener("click", () => {
     cardToDisplay.classList.add("list");
-    cardToDisplay.classList.remove("grid-card");   
+    cardToDisplay.classList.remove("grid-card");
 });
 
-document.getElementById('reload').addEventListener('click', getBusinessData);
+// document.getElementById('reload').addEventListener('click', getBusinessData);
 
 
 
-const url = `https://udoeyenokon.github.io/wdd231/chamber/chamber/data/members2.json${new Date().getTime()}`;
+const url = "https://udoeyenokon.github.io/wdd231/chamber/data/members.json";
 const businessCard = document.querySelector("#business-card");
 async function getBusinessData() {
     const response = await fetch(url);
     const data = await response.json();
-    // console.log(data);
+    console.log(data);
     displayBusinesses(data.companies);
 };
 
@@ -36,30 +36,54 @@ const displayBusinesses = (companies) => {
         let businessName = document.createElement("h2");
         let address = document.createElement("p");
         let telephone = document.createElement("p");
-        let website = document.createElement("p");
+        let website = document.createElement("a");
         let grade = document.createElement("p");
         let isQuoted = document.createElement("p");
         let image = document.createElement("img");
+        let tittleDiv = document.createElement("Div");
+        let logoeDiv = document.createElement("Div");
+        let infoDiv = document.createElement("Div");
 
         businessName.textContent = `${company.companyName}`;
         address.textContent = `${company.companyAddress}`;
         telephone.textContent = `${company.companyPhoneNumber}`;
-        website.textContent = `${company.companyWebsiteUrl}`;
-        grade.textContent = `${company.membershipLevel}`;
-        isQuoted.innerHTML = `<strong>Company's Stock is Quoted:</strong> ${company.stockIsQuoted}`;
+        website.innerHTML = `<a href="${company.companyWebsiteUrl}" target="_blank">${company.companyWebsiteUrl}</a>`;
+        grade.innerHTML = `<strong>Membership Grade: </strong>${company.membershipLevel}`;
+        isQuoted.innerHTML = `<strong>Stock Quoted:</strong> ${company.stockIsQuoted}`;
         image.setAttribute('src', company.imageUrl);
         image.setAttribute('alt', `Company Identity Image`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '400');
         image.setAttribute('height', '533');
 
-        card.appendChild(image);
-        card.appendChild(businessName);
-        card.appendChild(address);
-        card.appendChild(telephone);
-        card.appendChild(website);
-        card.appendChild(grade);
-        card.appendChild(isQuoted);
+        // address.setAttribute('class', 'address');
+        // telephone.setAttribute('class', 'telephone');
+        // grade.setAttribute('class', 'grade');
+        // isQuoted.setAttribute('class', 'isQuoted');
+
+        tittleDiv.setAttribute('class', 'tittle');
+        logoeDiv.setAttribute('class', 'logo');
+        infoDiv.setAttribute('class', 'info');
+
+        // card.appendChild(image);
+        // card.appendChild(businessName);
+        // card.appendChild(address);
+        // card.appendChild(telephone);
+        // card.appendChild(website);
+        // card.appendChild(grade);
+        // card.appendChild(isQuoted);
+
+        tittleDiv.appendChild(businessName);
+        tittleDiv.appendChild(address);
+        logoeDiv.appendChild(image);
+        infoDiv.appendChild(website);
+        infoDiv.appendChild(telephone);
+        infoDiv.appendChild(grade);
+        infoDiv.appendChild(isQuoted);
+
+        card.appendChild(tittleDiv);
+        card.appendChild(logoeDiv);
+        card.appendChild(infoDiv);
 
         cardToDisplay.appendChild(card);
     });
