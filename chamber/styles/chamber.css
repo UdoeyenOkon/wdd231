@@ -30,40 +30,24 @@ footer {
 
 /* HEADER */
 header {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 24px auto 90px 64px 24px;
     padding: 5px 0 5px 10px;
-    align-items: start;
-    margin: 0 auto;
-    column-gap: 20px;
+    align-items: center;
     background-color: var(--header-footer-background);
     color: var(--text-on-header-footer);
 }
 
-.identity {
-    display: flex;
-    column-gap: 5px;
-    /* align-content: end; */
-}
-
-.way-finding {
-    display: flex;
-    column-gap: 5px;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.identity img {
-    width: auto;
+header img {
+    width: 12px;
     height: 12px;
-    margin-top: 5px;
     display: block;
     border: 1px solid white;
-    /* background-color: #1d1817; */
+    /* background-color: #5a3129; */
     border-radius: 2px;
 }
 
-.way-finding img {
+.dark-theme {
     width: 16px;
     height: 16px;
     margin: 0 auto;
@@ -72,8 +56,8 @@ header {
 }
 
 header span {
-    font-size: 1.4em;
-    margin: 0 auto;
+    font-size: 1.5em;
+    /* margin: 0 auto; */
 }
 
 /* HAMBURGER NAVIGATION */
@@ -82,7 +66,7 @@ header span {
     border: none;
     color: white;
     cursor: pointer;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 .hamburger::before {
@@ -100,18 +84,19 @@ header span {
 }
 
 .navigation.show {
-    display: block;
+    display: flex;
+
 }
 
 .navigation ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px;
+    padding: 5px;
 }
 
 .navigation a {
     display: block;
-    padding: 10px;
+    padding: 5px 10px;
     text-decoration: none;
     color: var(--text-on-header-footer);
     text-align: start;
@@ -182,14 +167,15 @@ main {
     text-align: center;
 }
 
+.display-buttons button:hover {
+    background-color: #dbc1bb;
+}
+
 .display-buttons button {
     padding: 0.5rem 1rem;
     font-weight: 700;
 }
-#business-card img {
-    width: 100%;
-    height: auto;
-}
+
 
 .grid-card {
     display: grid;
@@ -199,7 +185,7 @@ main {
     /* border-bottom: 1px rgb(56, 53, 53) solid; */
 }
 
-section {
+.grid-card section {
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 0.5rem;
     background-color: #e3dfdf;
@@ -245,48 +231,29 @@ section {
     border: 1px solid #fff;
     box-shadow: 0 0 1rem #4a3939;
     width: 100%;
-        height: auto;
+    height: auto;
+}
+
+
+.list section{
+  padding: 20px;
 }
 
 .list {
-    display: grid;
-    grid-template-columns: 1fr;
-    
-}
-
-.list section {
     margin: 0;
-    padding: 0.25rem;
     text-align: center;
-}
-
-.list section>* {
-    margin: 0 1rem;
 }
 
 .list section img {
     display: none;
 }
 
-.list section h3 {
+.list section h2 {
     font-size: 1rem;
+    text-align: center;
 }
 
 .list section:nth-child(even) {
     background-color: #f7e9e9;
-}
+} 
 
-.list .title {
-    display: grid;
-    grid-template-columns: 1fr;
-    border-bottom: none;
-}
-
-.list .info {
-   display: grid;
-   grid-template-columns: 1fr;
-}
-
-.list .logo {
-    display: none;
-}
