@@ -30,7 +30,7 @@
     }
 
 
-    /* Main */
+    /* DIRECTORY */
 
     .list section {
         display: grid;
@@ -41,5 +41,10 @@
     .list section>* {
         text-align: left;
     }
+
+        /* HOME PAGE */
+
+
+        
 
 }

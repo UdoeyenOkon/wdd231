@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bussiness Directory for Uyo Chamber of Commerce by Udoeyen Okon</title>
+    <title> Welcome to Uyo Chamber of Commerce by Udoeyen OKON</title>
     <meta name="description"
-        content="This page layout the bussiness cards for the various bussiness members associated with the Chamber">
-    <meta name="author" content="Udoeyen Aniefiok Okon">
+        content="This page provides an introductory information about all you need to learn about Uyo Chamber of Commerce">
+    <meta name="author" content="Udoeyen Aniefiok OKON">
     <meta property="og:title" content="Chamber of Commerce, Uyo">
     <meta property="og:description"
         content="Share business contacts to enhance networking and gain insights about competitors and partners.">
@@ -25,7 +25,10 @@
     <link rel="stylesheet" href="styles/chamber-large.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/business-card.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <script src="scripts/uyo-weather.js" defer></script>
+    <script src="scripts/sportlight-card.js" defer></script>
+
 </head>
 
 <body>
@@ -35,8 +38,8 @@
         <span>Udoeyen Okon</span>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
@@ -46,15 +49,42 @@
     </header>
 
     <main>
-        <h1>Directory</h1>
+        <h1>About Us</h1>
 
-        <div class="display-buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <div class="hero">
+            <picture class="hero-picture">
+
+                <source srcset="images/market-square-small.webp" media="(logo=' + 320 + 'px)">
+                <source srcset="images/market-square-medium.webp" media="(min-width=' + 600 + 'px)">
+                <source srcset="images/market-square-large.webp" media="(min-width=' + 900 + 'px)">
+                <img src="images/market-square-large.webp" alt="Nigerian Market" width="1000" height="547" loading="lazy">
+            </picture>
+
+            <div class="events">
+                <h2>Upcoming Events</h2>
+                <div class="event-highlight"></div>
+            </div>
+
+
+            <div class="weather-report">
+                <h2>Weather Report</h2>
+                <!-- <p>Temperature<span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure> -->
+
+                <div id="forecast"></div>
+            </div>
+
+
 
         </div>
 
-        <div id="business-card"></div>
+        <div class="business-sportlight"></div>
+
+        <input type="submit" value="Join Us To Participate">
+
     </main>
 
     <footer>
@@ -68,13 +98,13 @@
 
         <div class="social-media">
             <a href="https://web.facebook.com/login/" target="_blank"><img src="images/facebook.svg" alt="facebook"
-                    width="16" height="16"></a>
+                    width="16" height="16" loading="lazy"></a>
             <a href="https://x.com/twitt_login?lang=en" target="_blank"><img src="images/twitter-x.svg"
-                    alt="Twitter twitter-x" width="16" height="16"></a>
+                    alt="Twitter twitter-x" width="16" height="16" loading="lazy"></a>
             <a href="https://www.linkedin.com/in/udoeyen-okon-a13135124/" target="_blank"><img src="images/linkedin.svg"
-                    alt="linkedin" width="16" height="16"></a>
+                    alt="linkedin" width="16" height="16" loading="lazy"></a>
             <a href="https://github.com/UdoeyenOkon" target="_blank"><img src="images/github.svg" alt="Github"
-                    width="16" height="16"></a>
+                    width="16" height="16" loading="lazy"></a>
 
         </div>
 
