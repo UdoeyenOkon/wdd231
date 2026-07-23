@@ -39,7 +39,7 @@ function displayResults(data) {
         const forecastHtml = `
       <div>
         <h4>${new Date(forecastItem.dt * 1000).toDateString()}</h4>
-        <p>${forecastItem.main.temp}&deg;C</p>
+        <p><strong>${forecastItem.main.temp}&deg;C</strong></p>
         <img src="https://openweathermap.org/img/w/${forecastItem.weather[0].icon}.png" alt="${forecastItem.weather[0].description}">
          <p>${forecastItem.weather[0].description}</p>
       </div>

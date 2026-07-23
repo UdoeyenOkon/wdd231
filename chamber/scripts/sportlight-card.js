@@ -55,9 +55,9 @@ const displayBusinessSportlightcard = (companies) => {
         image.width = 400;
         image.height = 533;
 
-        titleDiv.className = "tittle";
-        logoDiv.className = "logo";
-        infoDiv.className = "info";
+        titleDiv.className = "tittle2";
+        logoDiv.className = "logo2";
+        infoDiv.className = "info2";
 
         titleDiv.append(businessName, address);
         logoDiv.appendChild(image);
