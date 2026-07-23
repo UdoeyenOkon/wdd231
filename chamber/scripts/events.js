@@ -84,25 +84,43 @@ const eventHighlight = document.querySelector(".event-highlight");
 
 createEventCard(events);
 
-function createEventCard(events) {
-    events.forEach(event => {
-        let eventCard = document.createElement("section");
-        let eventName = document.createElement("h3");
-        eventName.textContent = event.eventName;
+// function createEventCard(events) {
+//     events.forEach(event => {
+//         let eventCard = document.createElement("section");
+//         let eventName = document.createElement("h3");
+//         eventName.textContent = event.eventName;
 
-        let activities = document.createElement("li");
-        event.activities.forEach(activity => {
-            activities.innerHTML += `<strong>${activity.type}:</strong> ${activity.details} <br>`;
-        });
+//         let activities = document.createElement("li");
+//         event.activities.forEach(activity => {
+//             activities.innerHTML += `<strong>${activity.type}:</strong> ${activity.details} <br>`;
+//         });
        
 
-        let date = document.createElement("p");
-        date.innerHTML = `<span><strong>Event Holds on:</strong>${event.date}</span>`;
+//         let date = document.createElement("p");
+//         date.innerHTML = `<span><strong>Event Holds on:</strong>${event.date}</span>`;
 
-        eventCard.append(eventName, activities, date);
+//         eventCard.append(eventName, activities, date);
         
-        eventHighlight.appendChild(eventCard);
+//         eventHighlight.appendChild(eventCard);
 
-    });
+//     });
+
+    function createEventCard(events) {
+        events.forEach(event => {
+            let eventCard = document.createElement("section");
+            let eventName = document.createElement("h3");
+            eventName.textContent = event.eventName;
+            let activitiesList = document.createElement("ul"); // Create a ul element
+            let activities = event.activities.map(activity => {
+                let li = document.createElement("li");
+                li.innerHTML = `<strong>${activity.type}:</strong> ${activity.details}`;
+                return li;
+            });
+            activities.forEach(li => activitiesList.appendChild(li));
+            let date = document.createElement("p");
+            date.innerHTML = `<span><strong>Event Holds on:</strong>${event.date}</span>`;
+            eventCard.append(eventName, activitiesList, date);
+            eventHighlight.appendChild(eventCard);
+        });
 }
 

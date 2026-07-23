@@ -38,7 +38,7 @@ function displayResults(data) {
         const forecastItem = data.list[i * 8]; // Get the forecast for every 8th item (i.e., every 24 hours)
         const forecastHtml = `
       <div>
-        <h4>${new Date(forecastItem.dt * 1000).toDateString()}</h4>
+        <h3>${new Date(forecastItem.dt * 1000).toDateString()}</h3>
         <p><strong>${forecastItem.main.temp}&deg;C</strong></p>
         <img src="https://openweathermap.org/img/w/${forecastItem.weather[0].icon}.png" alt="${forecastItem.weather[0].description}">
          <p>${forecastItem.weather[0].description}</p>
