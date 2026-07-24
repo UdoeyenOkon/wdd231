@@ -30,17 +30,11 @@
     }
 
 .list section {
-    display: flex;
-    gap: 10px;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 0.75fr .75fr 0.5fr 0.75fr 0.5fr 0.5fr;
+    gap: 30px;
+    text-align:left;
 }
-
-.list {
-   text-align:left;
-   padding: 20px;
-}
-    
-
 
     /* DIRECTORY */
     .events {
