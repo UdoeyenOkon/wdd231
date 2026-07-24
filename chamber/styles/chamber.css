@@ -346,13 +346,11 @@ main {
 
 .weather-report {
     font-size: 85%;
-    position: absolute;
-    left: 5px;
-    top: 5px;
     box-sizing: border-box;
     border: 1px solid rgb(0 0 0 / 10%);
     border-radius: 5px;
     background-color: #e2d2d295;
+    margin-top: 5px;
 }
 
 .weather-report h2 {
@@ -365,7 +363,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     box-sizing: border-box;
     border: 1px solid rgb(65, 60, 60);
-    padding: 0.1rem;
+    padding: 1rem;
     list-style: none;
     text-align: start;
     border-radius: 5px;
@@ -389,11 +387,14 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
+    position: absolute;
+    left: 5px;
+    top: 0;
 }
 
 .contact p, .contact a {
     box-sizing: border-box;
-    border: 1px solid brown;
+    border: 1px solid rgb(156, 75, 75);
     margin: 0;
     padding: 5px;
     border-radius: 10px;
@@ -411,13 +412,6 @@ main {
     grid-row: 2/3;
      text-align: right;
      background-color: #e2d2d2;
-}
-
-.li3 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    text-align: right;
-    background-color: #e2d2d2;
 }
 
 .contact a {
