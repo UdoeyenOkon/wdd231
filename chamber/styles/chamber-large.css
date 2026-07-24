@@ -29,6 +29,18 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+.list section {
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.list {
+   text-align:left;
+   padding: 20px;
+}
+    
+
 
     /* DIRECTORY */
     .events {
@@ -41,10 +53,9 @@
         display: flex;
     }
 
-    .weather-report {
-        right: 0;
-        top: 5px;
-    }
-
-
+        #forecast {
+            /* display: grid; */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* gap: 10px; */
+        }
 }
