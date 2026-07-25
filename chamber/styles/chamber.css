@@ -31,7 +31,7 @@ footer {
 /* HEADER */
 header {
     display: grid;
-    grid-template-columns: 24px auto auto 44px 44px;
+    grid-template-columns: 24px auto  44px 44px;
     padding: 5px 0 5px 10px;
     align-items: center;
     background-color: var(--header-footer-background);
