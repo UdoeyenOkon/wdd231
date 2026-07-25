@@ -382,11 +382,16 @@ main {
     grid-template-columns: 1fr;
 }
 
-#forecast img, #current {
+#forecast img {
     width: 80%;
 }
 
-#forecast div strong, #current-temp {
+
+#weather-icon {
+    width: 30%;
+}
+
+#forecast div strong {
     font-size: large;
 }
 
