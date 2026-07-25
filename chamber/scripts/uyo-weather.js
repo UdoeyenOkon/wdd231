@@ -28,7 +28,7 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
     let desc = data.list[0].weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc );
+    weatherIcon.setAttribute('alt', `${data.list[0].weather[0].description}`);
     captionDesc.textContent = desc;
 
     // Get the forecast for the next 3 days
