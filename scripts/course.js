@@ -79,6 +79,7 @@ const courses = [
 ]
 
 createCourseCard(courses);
+// displayCourseDetails(courses);
 
 const allLink = document.querySelector("#all");
 allLink.addEventListener("click", () => {
@@ -107,21 +108,49 @@ wddLink.addEventListener("click", () => {
 function createCourseCard(coursesToDisplay) {
     coursesToDisplay.forEach((course) => {
         let courseCard = document.createElement("p");
-        
-        if (course.completed === true) { courseCard.innerHTML = `<span class = "completed"> ✅ ${course.subject} ${course.number}` }
+        if (course.completed === true) {
+            courseCard.innerHTML = `<span class = "completed"> ✅ ${course.subject} ${course.number}`
+        }
         else {
             courseCard.innerHTML = `<span class = "not-completed"> ❌ ${course.subject} ${course.number}`
         };
-
+        courseCard.addEventListener("click", () => showDetails(course));
         document.querySelector("#course-card").appendChild(courseCard);
- 
     });
-   
-    let totalCredits = coursesToDisplay.reduce((accumulator, course) => accumulator + course.credits, 0);
-        document.getElementById("credit").innerHTML = `The total number of credits for the courses listed above is ${totalCredits}`;
 
+    let totalCredits = coursesToDisplay.reduce((accumulator, course) => accumulator + course.credits, 0);
+    document.getElementById("credit").innerHTML = `The total number of credits for the courses listed above is ${totalCredits}`;
 };
 
 
+//............LOOP THROUGH THE ARRAY OF JSON ITEMS
+// function displayCourseDetails(courses) {
+//     courses.forEach((course) => {
+//         let courseCard = document.createElement("p");
+//         if (course.completed === true) {
+//             courseCard.innerHTML = `<span class = "completed"> ✅ ${course.subject} ${course.number}`
+//         } else {
+//             courseCard.innerHTML = `<span class = "not-completed"> ❌ ${course.subject} ${course.number}`
+//         };
+//         courseCard.addEventListener("click", () => showDetails(course));
+//         document.querySelector("#course-card").appendChild(courseCard);
+//     });
+// }
 
+function showDetails(course) {
+    const courseDetails = document.querySelector("#course-details");
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+    <button class="close-button">❌</button>
+    <p>${course.subject} ${course.number}</p>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p>${course.description}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
 
+    let closeModal = document.querySelector(".close-button");
+    closeModal.addEventListener("click", () => courseDetails.close());
+}

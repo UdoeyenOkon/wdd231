@@ -271,10 +271,11 @@ main {
 .business-sportlight section {
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 0.5rem;
-    background-color: #e3dfdf;
+    background-color: #e3dfdf20;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 400px;
 }
 
 .tittle2 {
@@ -355,18 +356,21 @@ main {
 
 .weather-report h2 {
     text-align: center;
-    background: white;
+    /* background: white; */
+    margin-top: 10px;
 }
 
 #forecast div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr 24px 1fr;
     box-sizing: border-box;
-    border: 1px solid rgb(65, 60, 60);
+    /* border: 1px solid rgb(65, 60, 60); */
     padding: 1rem;
     list-style: none;
     text-align: start;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    margin: 10px;
+    gap: 10px;
 }
 
 #forecast {
@@ -375,7 +379,7 @@ main {
 }
 
 #forecast img {
-    width: 30%;
+    width: 80%;
 }
 
 #forecast div strong {
@@ -388,7 +392,7 @@ main {
     grid-template-columns: 1fr 1fr;
     padding: 10px;
     position: absolute;
-    left: 5px;
+    left: 25%;
     top: 0;
 }
 
