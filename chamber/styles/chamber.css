@@ -89,6 +89,7 @@ header span {
 /* NAVIGATION */
 .navigation {
     display: none;
+    background-color: var(--header-footer-background);
 }
 
 .navigation.show {
