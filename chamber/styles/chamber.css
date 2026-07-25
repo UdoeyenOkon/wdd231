@@ -31,7 +31,7 @@ footer {
 /* HEADER */
 header {
     display: grid;
-    grid-template-columns: 24px auto 90px 64px 24px;
+    grid-template-columns: 24px auto auto 44px 44px;
     padding: 5px 0 5px 10px;
     align-items: center;
     background-color: var(--header-footer-background);
@@ -66,6 +66,11 @@ header span {
     border: none;
     color: white;
     cursor: pointer;
+    border: 1px solid gold;
+    background-color: gray;
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
     /* margin-left: 10px; */
 }
 
@@ -76,6 +81,9 @@ header span {
 .hamburger.show::before {
     content: "\00D7";
     /* font-size: 1.5rem; */
+}
+.hamburger:hover {
+    background: #e2d2d2;
 }
 
 /* NAVIGATION */
