@@ -47,13 +47,13 @@ header img {
     border-radius: 2px;
 }
 
-.dark-theme {
+/* .dark-theme {
     width: 16px;
     height: 16px;
     margin: 0 auto;
     background-color: white;
     border-radius: 3px;
-}
+} */
 
 header span {
     font-size: 1.5em;
@@ -103,7 +103,7 @@ header span {
 }
 
 .active {
-    background-color: #3e434a;
+    background-color: #7f1010;
     border-radius: 5px;
 }
 
@@ -165,7 +165,7 @@ main {
 .display-buttons {
     margin: 1rem auto;
     padding: 0.5rem;
-    background-color: #333;
+    background-color: #575353;
     text-align: center;
 }
 
@@ -306,6 +306,10 @@ main {
     margin: 0.1rem;
 }
 
+.business-sportlight section a {
+    color: var(--text-on-main-page);
+}
+
 .business-sportlight img {
     border: 1px solid #fff;
     box-shadow: 0 0 1rem #4a3939;
@@ -355,7 +359,7 @@ main {
 }
 
 .weather-report h2 {
-    text-align: center;
+    text-align: start;
     /* background: white; */
     margin-top: 10px;
 }
@@ -373,16 +377,16 @@ main {
     gap: 10px;
 }
 
-#forecast {
+#forecast, #current {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-#forecast img {
+#forecast img, #current {
     width: 80%;
 }
 
-#forecast div strong {
+#forecast div strong, #current-temp {
     font-size: large;
 }
 

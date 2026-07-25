@@ -24,12 +24,12 @@ apiFetch();
 
 function displayResults(data) {
     // Get the current weather
-    // currentTemperature.innerHTML = `${data.list[0].main.temp}&deg;C`;
-    // const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
-    // let desc = data.list[0].weather[0].description;
-    // weatherIcon.setAttribute('src', iconsrc);
-    // weatherIcon.setAttribute('alt', desc );
-    // captionDesc.textContent = desc;
+    currentTemperature.innerHTML = `${data.list[0].main.temp}&deg;C`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
+    let desc = data.list[0].weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc );
+    captionDesc.textContent = desc;
 
     // Get the forecast for the next 3 days
     const forecastContainer = document.querySelector("#forecast");
