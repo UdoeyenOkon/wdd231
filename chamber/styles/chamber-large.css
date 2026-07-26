@@ -8,10 +8,10 @@
         display: none;
     }
 
-    body {
-        /* max-width: 1000px; */
-        /* margin: 0 auto; */
-    }
+    /* body {
+        max-width: 1000px;
+        margin: 0 auto;
+    } */
 
     .navigation {
         display: flex;
