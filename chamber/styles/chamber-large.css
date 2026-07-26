@@ -1,8 +1,8 @@
 @media (min-width: 730px) {
 
-    header {
-        grid-template-columns: 24px auto auto 84px;
-    }
+    /* header {
+        grid-template-columns: 24px auto;
+    } */
 
     .hamburger {
         display: none;
@@ -10,7 +10,7 @@
 
     body {
         /* max-width: 1000px; */
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     .navigation {
@@ -21,7 +21,6 @@
         display: flex;
         column-gap: 20px;
     }
-
 
     /* FOOTER */
     footer {
