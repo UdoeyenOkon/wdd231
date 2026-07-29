@@ -16,7 +16,7 @@ const membershiplevels = [
         id: "NP",
         name: "Non-Profit Organization Level(NP)",
         benefits: ["Designed to support community groups", "No membership fee required", "Directory listing with logo + contact info", "2 Spotlight slots per year on website/socials",
-        "Access to free webinars + training hosted by the Chamber", "Member-to-member discounts at Chamber events", "Newsletter + advocacy updates"]
+            "Access to free webinars + training hosted by the Chamber", "Member-to-member discounts at Chamber events", "Newsletter + advocacy updates"]
     },
     {
         id: "Bronze",
@@ -43,49 +43,52 @@ const membershiplevels = [
     }
 ];
 
-membershiplevels.forEach((level) => {
-    let option = document.createElement("option")
-    option.textContent = level.id;
-    option.value = level.id;
-    document.getElementById("membership-level").appendChild(option);
+// membershiplevels.forEach((level) => {
+//     let option = document.createElement("option")
+//     option.textContent = level.id;
+//     option.value = level.id;
+//     document.getElementById("membership-level").appendChild(option);
 
+// });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    function createMembershipCard(membershiplevels) {
+        membershiplevels.forEach((membershiplevel) => {
+            let membershipCard = document.createElement("section");
+            let membershiplevelName = document.createElement("p");
+            membershiplevelName.textContent = membershiplevel.name;
+
+            let learnMoreButton = document.createElement("button");
+            learnMoreButton.textContent = "Learn More";
+
+            membershipCard.append(membershiplevelName, learnMoreButton);
+
+            learnMoreButton.addEventListener("click", () =>
+                showMembershipLevelDetails(membershiplevel)
+            );
+
+            document.querySelector("#membership-card").appendChild(membershipCard);
+        });
+    }
+
+    createMembershipCard(membershiplevels);
 });
 
+    function showMembershipLevelDetails(membershiplevel) {
+        const membershipLevelDetails = document.querySelector("#membershipLevelDetails");
+        membershipLevelDetails.innerHTML = "";
+        membershipLevelDetails.innerHTML = ` 
+      <div>
+        <h3>${membershiplevel.name}</h3>
+        <button class="close-button">❌</button>
+      </div>
+      <p>${membershiplevel.benefits.join(' * ')}</p>
+    `;
+        membershipLevelDetails.showModal();
+        let closeModal = document.querySelector(".close-button");
+        closeModal.addEventListener("click", () => membershipLevelDetails.close());
+    }
 
-createMembershipeCard(membershiplevels);
-
-function createMembershipeCard(membershiplevels) {
-    membershiplevels.forEach((membershiplevel) => {
-        let membershipCard = document.createElement("section");
-        let membershiplevelName = document.createElement("p");
-        membershiplevelName.innerHTML = membershiplevel.name
-
-        let learnMoreButton = document.createElement("button");
-        learnMoreButton.innerHTML = `Learn More`
-
-        membershipCard.append(membershiplevelName, learnMoreButton);
-        learnMoreButton.addEventListener("click", () => showMembershipLevelDetails(membershiplevel));
-        document.querySelector("#membership-card").appendChild(membershipCard);
-    });
-};
-
-
-function showMembershipLevelDetails(membershiplevel) {
-    const membershipLevelDetails = document.querySelector("#membershipLevelDetails");
-    membershipLevelDetails.innerHTML = "";
-    membershipLevelDetails.innerHTML = `
-    <div>
-     <h3>${membershiplevel.name}</h3>
-    <button class="close-button">❌</button>
-    </div>
-    <p>${membershiplevel.benefits.join(' * ')}</p>
-  `;
-    membershipLevelDetails.showModal();
-
-    let closeModal = document.querySelector(".close-button");
-    closeModal.addEventListener("click", () => membershipLevelDetails.close());
-}
-
-
-
-
+  
