@@ -626,11 +626,16 @@ p {
     margin: 10px;
 }
 
-.thank-you h2{
+.thank-you h2 {
     border-bottom: 1px solid gray;
     padding: 10px;
 }
 
 .thank-you div {
-   margin-top: 25px;
+    margin-top: 25px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
 }
