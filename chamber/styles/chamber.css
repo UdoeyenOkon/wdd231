@@ -87,7 +87,6 @@ header span {
 
 /* HAMBURGER NAVIGATION */
 .hamburger {
-    border: none;
     color: white;
     cursor: pointer;
     font-size: x-large;
