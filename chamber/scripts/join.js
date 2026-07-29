@@ -13,20 +13,20 @@ form.addEventListener('submit', (e) => {
 
 const membershiplevels = [
     {
-        id: 1,
+        id: "NP",
         name: "Non-Profit Organization Level(NP)",
         benefits: ["Designed to support community groups", "No membership fee required", "Directory listing with logo + contact info", "2 Spotlight slots per year on website/socials",
         "Access to free webinars + training hosted by the Chamber", "Member-to-member discounts at Chamber events", "Newsletter + advocacy updates"]
     },
     {
-        id: 2,
+        id: "Bronze",
         name: "Bronze Membership Level",
         benefits: ["Good for small businesses getting started", "Membership fee is NGN150,000.00", "Everything in NP +", "Listed on the directory",
             "Guaranteed directory listing with priority placement above NP", "Invite to 4 networking events per year - breakfasts, happy hours",
             "1 business expo booth at a discounted rate", "Access to Chamber resource library - templates, guides", "Mention in monthly newsletter"]
     },
     {
-        id: 3,
+        id: "Silver",
         name: "Silver Membership Level",
         benefits: ["For growing businesses that want visibility", "Membership fee is NGN250,000.00", "Everything in Bronze +", "Quarterly Spotlight slots - featured on homepage + social media",
             "Free booth at 2 Business Expos per year", "2 tickets to VIP Dinners with local leaders", "Access to Member-Exclusive Events - behind-the-scenes tours, appreciation nights",
@@ -34,7 +34,7 @@ const membershiplevels = [
         ]
     },
     {
-        id: 4,
+        id: "Gold",
         name: "Gold Membership Level",
         benefits: ["For established businesses wanting leadership + influence", "Membership fee is NGN350,000.00", "Everything in Silver +", "Monthly Spotlight slots + featured article on website",
             "VIP lunch invitation with government officials + keynote speakers", "Priority speaking slot at Ticketed Speaker Series", "Free booth at all Chamber expos + events for the year",
@@ -45,8 +45,8 @@ const membershiplevels = [
 
 membershiplevels.forEach((level) => {
     let option = document.createElement("option")
-    option.textContent = level.name;
-    option.value = level.name;
+    option.textContent = level.id;
+    option.value = level.id;
     document.getElementById("membership-level").appendChild(option);
 
 });
