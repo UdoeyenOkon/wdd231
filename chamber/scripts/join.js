@@ -2,11 +2,8 @@ const form = document.querySelector('.contact-form');
 form.addEventListener('submit', (e) => {
     const submissionTime = new Date();
     const formattedTime = new Intl.DateTimeFormat("en-US", { dateStyle: "full", timeStyle: "medium" }).format(submissionTime);
-    const hiddenInput = document.createElement('input');
-    hiddenInput.type = 'hidden';
-    hiddenInput.name = 'submissionTime';
-    hiddenInput.value = formattedTime;
-    form.appendChild(hiddenInput);
+    document.getElementById("timestamp").value = formattedTime
+
 });
 
 

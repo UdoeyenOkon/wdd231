@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/chamber-large.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-     <script src="scripts/join.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
 
 </head>
@@ -69,35 +69,37 @@
                     <label for="title">Your Organisational Title</label>
                     <input type="text" id="title" name="title" autocomplete="organization-title"
                         pattern="[A-Za-z \-]{7,}" title="title"
-                        placeholder="Only letters, spaces, & hyphens (Minimum 7 characters)">
+                        placeholder="Only letters, spaces, & hyphens (Min 7 characters)">
                 </div>
                 <div>
                     <label for="email">Your Contact Email Address*<input type="email" id="email" name="email"
-                            title="email" required placeholder="emailaddress@gmail.org"
-                            autocomplete="email"></label>
+                            title="email" required placeholder="emailaddress@gmail.org" autocomplete="email"></label>
                 </div>
                 <div>
-                    <label for="telephone">Your Contact Telephone Number (Optional)<input type="tel" id="telephone" required
-                            title="telephone" autocomplete="tel" name="telephone"></label>
+                    <label for="telephone">Your Contact Telephone Number (Optional)<input type="tel" id="telephone"
+                            required title="telephone" autocomplete="tel" name="telephone"></label>
                 </div>
                 <div>
-                    <label for="organizationName">Your Business / Organization's Name*<input type="text" title="organizationName"
-                            id="organizationName" name="organizationName" required autocomplete="organization"></label>
+                    <label for="organizationName">Your Business / Organization's Name*<input type="text"
+                            title="organizationName" id="organizationName" name="organizationName" required
+                            autocomplete="organization"></label>
                 </div>
 
                 <div>
                     <h2>Membership Level*</h2>
                     <div class="radio">
-                    <label for="np"><input id="np" type="radio" name="level" value="np" required>NP</label>
-                    <label for="bronze"><input id="bronze" type="radio" name="level" value="bronze" required>Bronze</label>
-                    <label for="silver"><input id="silver" type="radio" name="level" value="silver" required>Silver</label>
-                    <label for="gold"><input id="gold" type="radio" name="level" value="gold" required>Gold</label>
+                        <label for="np"><input id="np" type="radio" name="level" value="np" required>NP</label>
+                        <label for="bronze"><input id="bronze" type="radio" name="level" value="bronze"
+                                required>Bronze</label>
+                        <label for="silver"><input id="silver" type="radio" name="level" value="silver"
+                                required>Silver</label>
+                        <label for="gold"><input id="gold" type="radio" name="level" value="gold" required>Gold</label>
                     </div>
                 </div>
 
                 <div>
-                    <label>Provide business/organization's description (Optional)<textarea name="description" title="description"
-                            id="details"></textarea></label>
+                    <label>Provide business/organization's description (Optional)<textarea name="description"
+                            title="description" id="details"></textarea></label>
                 </div>
 
                 <label><input id="timestamp" type="hidden" name="timestamp" title="timestamp"></label>
