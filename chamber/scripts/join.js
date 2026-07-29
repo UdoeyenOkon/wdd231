@@ -40,13 +40,20 @@ const membershiplevels = [
     }
 ];
 
-// membershiplevels.forEach((level) => {
-//     let option = document.createElement("option")
-//     option.textContent = level.id;
-//     option.value = level.id;
-//     document.getElementById("membership-level").appendChild(option);
+membershiplevels.forEach((level) => {
+    let label = document.createElement("label")
+    let input = document.createElement("input")
+    input.id = level.id;
+    input.type = 'radio';
+    input.name = 'level';
+    input.value = level.id;
+    input.require = true;
+    // label.textContent = level.id;
+    label.appendChild(input);
+    label.appendChild(document.createTextNode(level.id));
+    document.querySelector(".radio").appendChild(label);
 
-// });
+});
 
 
 document.addEventListener('DOMContentLoaded', () => {

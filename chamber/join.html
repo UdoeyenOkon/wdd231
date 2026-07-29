@@ -51,7 +51,7 @@
 
 
     <main class="reg-form">
-        <div>
+        <div class=" form1">
             <h1>Join Form</h1>
             <p><span id="note">(Fields with (*) are required)</span></p>
 
@@ -69,7 +69,7 @@
                     <label for="title">Your Organisational Title</label>
                     <input type="text" id="title" name="title" autocomplete="organization-title"
                         pattern="[A-Za-z \-]{7,}" title="title"
-                        placeholder="Only letters, spaces, & hyphens (Min 7 characters)">
+                        placeholder="Only letters, spaces, & hyphens (Minimum of 7 characters)">
                 </div>
                 <div>
                     <label for="email">Your Contact Email Address*<input type="email" id="email" name="email"
@@ -86,14 +86,17 @@
                 </div>
 
                 <div>
-                    <h2>Membership Level*</h2>
+                    <p><span id="note">Chose Your Desired Membership level*</span></p>
                     <div class="radio">
-                        <label for="np"><input id="np" type="radio" name="level" value="np" required>NP</label>
+                        <!-- <label for="np"><input id="np" type="radio" name="level" value="np" required>NP</label>
                         <label for="bronze"><input id="bronze" type="radio" name="level" value="bronze"
                                 required>Bronze</label>
                         <label for="silver"><input id="silver" type="radio" name="level" value="silver"
                                 required>Silver</label>
                         <label for="gold"><input id="gold" type="radio" name="level" value="gold" required>Gold</label>
+                    
+                        <div id="radio-button"></div> -->
+                    
                     </div>
                 </div>
 
@@ -109,8 +112,8 @@
             </form>
         </div>
 
-        <div>
-            <h2>Membership Levels</h2>
+        <div class="form2">
+            <p><span id="note">See the Membership Level Details</span></p>
 
             <div id="membership-card" class="card"></div>
 

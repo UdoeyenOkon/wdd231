@@ -13,7 +13,7 @@ localStorage.setItem("numEnquiries-Is", numEnquiries);
 
 
 const formInformation = new URLSearchParams(window.location.search);
-const submissionTime = formInformation.get('submissionTime');
+const submissionTime = formInformation.get('timestamp');
 
 document.querySelector("#form-info").innerHTML = `
 <p> <strong>Applicant Name (Title ):</strong> ${formInformation.get('firstName')} ${formInformation.get('lastName')} (${formInformation.get('title')})</p>

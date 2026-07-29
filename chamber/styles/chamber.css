@@ -616,6 +616,24 @@ p {
     padding: 15px;
 }
 
+.radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio p {
+    text-align: end;
+}
+
+.contact-form div {
+    padding: 10px;
+}
+
+.form2 {
+    margin-top: 20px;
+}
+
+
 /* ..............THANK YOU FORM..................... */
 .thank-you {
     margin: 10px;
@@ -630,7 +648,3 @@ p {
     margin-top: 25px;
 }
 
-.radio {
-    display: flex;
-    flex-direction: column;
-}
