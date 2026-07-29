@@ -52,4 +52,26 @@
             gap: 10px;
             /* max-width: 900px; */
         }
+
+/* ..............JOIN FORM..................... */
+.reg-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#membershipLevelDetails {
+    position: absolute;
+    left: 12%;
+    top: 25%;
+}
+
+
+
+
+/* ..............THANK YOU FORM..................... */
+
+
+
+
+
 }

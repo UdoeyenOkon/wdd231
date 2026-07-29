@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Welcome to Uyo Chamber of Commerce by Udoeyen OKON</title>
     <meta name="description"
-        content="This page provides access to business to make enquiries and apply to join the Uyo Chamber of Commerce">
+        content="This page provides a feedback to customers on successful submission of their eqnquiriesabout the Chamber">
     <meta name="author" content="Udoeyen Aniefiok OKON">
     <meta property="og:title" content="Chamber of Commerce, Uyo">
     <meta property="og:description"
@@ -25,11 +25,7 @@
     <link rel="stylesheet" href="styles/chamber-large.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <!-- <script src="scripts/events.js" defer></script>
-    <script src="scripts/uyo-weather.js" defer></script>
-    <script src="scripts/sportlight-card.js" defer></script> -->
-    <script src="scripts/join.js" defer></script>
-
+     <script src="scripts/thankyou.js" defer></script>
 
 </head>
 
@@ -47,78 +43,20 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li class="active"><a href="join.html">Join</a></li>
+            <li  class="active"><a href="join.html">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
 
-
-    <main class="reg-form">
-        <div>
-            <h2>Registration Form</h2>
-            <p><span id="note">(Fields with (*) are required)</span></p>
-
-            <form action="thankyou.html" method="get" class="contact-form">
-
-                <div>
-                    <label for="firstName">First Name*<input type="text" id="firstName" name="firstName" required
-                            autocomplete="given-name"></label>
-                </div>
-                <div>
-                    <label for="lastName">Last Name*<input type="text" id="lastName" name="lastName" required
-                            autocomplete="family-name"></label>
-                </div>
-                <div>
-                    <label for="title">Your Organisational Title</label>
-                    <input type="text" id="title" name="title" autocomplete="organization-title"
-                        pattern="[A-Za-z \-]{7,}"
-                        title="Only letters, spaces, and hyphens are allowed. Minimum 7 characters.">
-                </div>
-                <div>
-                    <label for="email">Your Contact Email Address*<input type="email" id="email" name="email" required
-                            autocomplete="on" placeholder="emailaddress@gmail.org" autocomplete="on"></label>
-                </div>
-                <div>
-                    <label>Your Contact Telephone Number (Optional)<input type="tel" id="telephone" required
-                            autocomplete="on" name="telephone"></label>
-                </div>
-                <div>
-                    <label for="organizationName">Your Business / Organization's Name*<input type="text"
-                            id="organizationName" name="organizationName" required autocomplete="organization"></label>
-                </div>
-
-                <div>
-
-                    <label for="membership-level">Membership Level*</label>
-
-                    <select name="membership" id="membership-level">
-                        <option value="" disabled selected>Select the Membership Level You Wish To Join Required...
-                            &#9662;
-                        </option>
-                        <!-- options will go here -->
-                    </select>
-                </div>
-
-                <div>
-                    <label>Provide business/organization's description (Optional)<textarea name="description"
-                            id="details"></textarea></label>
-                </div>
-
-                <input type="submit" value="Register">
-
-            </form>
-        </div>
+    <main class="thank-you">
+        <h2>Registration Form Submitted<img src="images/checker.webp" width="32" height="32" alt="checker"></h2>
+    
+        <p>Thank you for for filling out the form. We will get back to you within 24 hours.</p>
 
         <div>
-            <h2>Membership Levels</h2>
-
-            <div id="membership-card" class="card"></div>
-
-            <dialog id="membershipLevelDetails"></dialog>
+            <h3>Form Information</h3>
+            <div id="form-info"></div>
         </div>
-
-
-
     </main>
 
     <footer>
