@@ -546,7 +546,7 @@ input[type="submit"]:hover {
     background: yellowgreen;
 }
 
-#note,
+#note, #note2, #note3,
 .note2 {
     font-style: italic;
 }
