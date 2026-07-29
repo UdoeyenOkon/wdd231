@@ -20,7 +20,7 @@ document.querySelector("#form-info").innerHTML = `
 <p> <strong>Email Address:</strong> ${formInformation.get('email')}</p>
 <p> <strong>Telephone Number:</strong> ${formInformation.get('telephone')}</p>
 <p><strong>Name of Organization</strong>: ${formInformation.get('organizationName')}</p>
-<p> <strong>Membership Level:</strong> ${formInformation.get('membership')}</p>
+<p> <strong>Membership Level:</strong> ${formInformation.get('level')}</p>
 <p> <strong>Business / Organization Description:</strong> ${formInformation.get('description')}</p>
 <p> <strong>Registration Requested on:</strong> ${submissionTime}</p>
 `;
