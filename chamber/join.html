@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Welcome to Uyo Chamber of Commerce by Udoeyen OKON</title>
+    <title> Welcome to Join Uyo Chamber of Commerce</title>
     <meta name="description"
         content="This page provides access to business to make enquiries and apply to join the Uyo Chamber of Commerce">
     <meta name="author" content="Udoeyen Aniefiok OKON">
@@ -55,32 +55,33 @@
 
     <main class="reg-form">
         <div>
-            <h2>Registration Form</h2>
+            <h1>Join Form</h1>
             <p><span id="note">(Fields with (*) are required)</span></p>
 
             <form action="thankyou.html" method="get" class="contact-form">
 
                 <div>
                     <label for="firstName">First Name*<input type="text" id="firstName" name="firstName" required
-                            autocomplete="given-name"></label>
+                            autocomplete="given-name" title="firstName"></label>
                 </div>
                 <div>
                     <label for="lastName">Last Name*<input type="text" id="lastName" name="lastName" required
-                            autocomplete="family-name"></label>
+                            autocomplete="family-name" title="lastName"></label>
                 </div>
                 <div>
                     <label for="title">Your Organisational Title</label>
                     <input type="text" id="title" name="title" autocomplete="organization-title"
-                        pattern="[A-Za-z \-]{7,}"
-                        title="Only letters, spaces, and hyphens are allowed. Minimum 7 characters." placeholder="Only Letters, spaces, & hyphens (7 characters Minimum).">
+                        pattern="[A-Za-z \-]{7,}" title="title"
+                        placeholder="Only letters, spaces, & hyphens (Minimum 7 characters)">
                 </div>
                 <div>
-                    <label for="email">Your Contact Email Address*<input type="email" id="email" name="email" required
-                            autocomplete="on" placeholder="emailaddress@gmail.org" autocomplete="on"></label>
+                    <label for="email">Your Contact Email Address*<input type="email" id="email" name="email"
+                            title="email" required autocomplete="on" placeholder="emailaddress@gmail.org"
+                            autocomplete="email"></label>
                 </div>
                 <div>
                     <label>Your Contact Telephone Number (Optional)<input type="tel" id="telephone" required
-                            autocomplete="on" name="telephone"></label>
+                            title="telephone" autocomplete="on" name="telephone"></label>
                 </div>
                 <div>
                     <label for="organizationName">Your Business / Organization's Name*<input type="text"
@@ -88,21 +89,21 @@
                 </div>
 
                 <div>
-
                     <label for="membership-level">Membership Level*</label>
-
-                    <select name="membership" id="membership-level">
-                        <option value="" disabled selected>Select the Membership Level You Wish To Join Required...
-                            &#9662;
-                        </option>
-                        <!-- options will go here -->
-                    </select>
+                    <div class="radio">
+                    <label for="np"><input id="np" type="radio" name="level" value="np" required>NP</label>
+                    <label for="bronze"><input id="bronze" type="radio" name="level" value="bronze" required>Bronze</label>
+                    <label for="silver"><input id="silver" type="radio" name="level" value="silver" required>Silver</label>
+                    <label for="gold"><input id="gold" type="radio" name="level" value="gold" required>Gold</label>
+                    </div>
                 </div>
 
                 <div>
                     <label>Provide business/organization's description (Optional)<textarea name="description"
                             id="details"></textarea></label>
                 </div>
+
+                <label><input id="timestamp" type="hidden" name="timestamp" title="timestamp"></label>
 
                 <input type="submit" value="Register">
 
