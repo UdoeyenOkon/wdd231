@@ -24,16 +24,15 @@ main {
     color: #161313;
 }
 
-h1,
 header,
 footer {
-    font-family: "Marcellus", serif;
-    font-weight: 400;
-    font-style:normal;
     text-align: center;
     background-color: var(--secondary-color);
     padding: 5px;
     color: #f5f0f0;
+}
+h1,
+h2 {
     font-family: "Marcellus", Georgia, "Times New Roman", serif;
     line-height: 1.2;
 }
@@ -53,12 +52,14 @@ section {
     margin: 10px;
 }
 
-.small img,
-.large img {
+.small img {
     display: block;
     max-width: 100%;
     height: auto;
+}
 
+.large img {
+    display: none;
 }
 
 .large,
@@ -67,14 +68,13 @@ section {
     margin: 15px;
 }
 
-figure {
-    width: fit-content;
-}
 
 @media (min-width: 768px) {
 
     .large {
         display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     .small {
