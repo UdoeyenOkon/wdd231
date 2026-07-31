@@ -68,3 +68,15 @@ section {
 figure {
     width: fit-content;
 }
+
+@media (min-width: 768px) {
+
+    .large {
+        display: block;
+    }
+
+    .small {
+        display: none;
+    }
+
+}
