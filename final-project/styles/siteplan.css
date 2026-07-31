@@ -28,7 +28,7 @@ header,
 footer {
     font-family: "Marcellus", serif;
     font-weight: 300;
-    font-style: normal;
+    font-style:normal;
     text-align: center;
     background-color: var(--secondary-color);
     padding: 5px;
