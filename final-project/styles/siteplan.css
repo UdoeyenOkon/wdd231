@@ -18,7 +18,6 @@ body {
 }
 
 main {
-    width: 100%;
     background-color: var(--primary-color);
     color: #161313;
 }
