@@ -45,6 +45,7 @@
     .event-highlight {
         display: flex;
     }
+    
 
     #forecast {
         /* display: grid; */
@@ -52,6 +53,11 @@
         gap: 10px;
         /* max-width: 900px; */
     }
+        .contact {
+            position: absolute;
+            left: 25%;
+            top: 0;
+        }
 
     /* ..............JOIN FORM..................... */
     .reg-form {
