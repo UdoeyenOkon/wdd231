@@ -15,7 +15,7 @@ body {
     font-family: "News Cycle", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-family: "News Cycle", Arial, sans-serif;
+    font-family: "News Cycle", Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -33,7 +33,7 @@ footer {
     background-color: var(--secondary-color);
     padding: 5px;
     color: #f5f0f0;
-    font-family: "Marcellus", Georgia, serif;
+    font-family: "Marcellus", Georgia, "Times New Roman", serif;
 }
 
 header,
