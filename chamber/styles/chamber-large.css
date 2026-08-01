@@ -1,5 +1,9 @@
 @media (min-width: 730px) {
 
+    header span {
+            font-size: 1.8rem;
+    }
+        
     /* header {
         grid-template-columns: 24px auto;
     } */
@@ -38,7 +42,7 @@
     /* DIRECTORY */
     .events {
         position: absolute;
-        bottom: 5px;
+        bottom: 0;
         left: 0;
     }
 
