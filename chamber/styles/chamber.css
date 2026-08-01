@@ -41,7 +41,7 @@ footer {
 header {
     display: flex;
     align-items: center;
-    padding: 5px 0 5px 10px;
+    padding: 5px 0 5px 0;
     background-color: var(--header-footer-background);
     color: var(--text-on-header-footer);
     justify-content: flex-start;
@@ -54,7 +54,7 @@ header {
 }
 
 .header-logo img {
-    width: 100;
+    width: 32px;
     height: auto;
     /* aspect-ratio: 1/1; */
     display: block;
