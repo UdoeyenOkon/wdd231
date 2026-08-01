@@ -61,11 +61,11 @@
     /* ..............JOIN FORM..................... */
     .reg-form {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .form1 {
-         min-width: 750px;
+        grid-column: 1/3;
     }
 
     #membershipLevelDetails {
