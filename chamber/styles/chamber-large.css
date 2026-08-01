@@ -40,11 +40,11 @@
     }
 
     /* DIRECTORY */
-    .events {
+    /* .events {
         position: absolute;
         bottom: 0;
         left: 0;
-    }
+    } */
 
     .event-highlight {
         display: flex;
@@ -57,11 +57,6 @@
         gap: 10px;
         /* max-width: 900px; */
     }
-        .contact {
-            position: absolute;
-            left: 25%;
-            top: 0;
-        }
 
     /* ..............JOIN FORM..................... */
     .reg-form {
