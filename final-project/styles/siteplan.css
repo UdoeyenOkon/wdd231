@@ -53,13 +53,13 @@ section {
     margin: 10px;
 }
 
-.small img {
+.small img, .large img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.large img {
+.large {
     display: none;
 }
 
