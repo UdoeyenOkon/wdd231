@@ -465,8 +465,7 @@ main {
     position: absolute;
     left: 25%;
     top: 0;
-    min-height: 50px;
-}
+  }
 
 .contact p,
 .contact a {
