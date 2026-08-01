@@ -50,7 +50,7 @@ header {
 .header-logo {
     display: flex;
     align-items: center;
-    margin: 0;
+    margin: 10px 0 10px 20px;
 }
 
 .header-logo img {
@@ -60,7 +60,6 @@ header {
     display: block;
     border: 1px solid gold;
     border-radius: 2px;
-    margin-right: 10px;
 }
 
 /* header img {
