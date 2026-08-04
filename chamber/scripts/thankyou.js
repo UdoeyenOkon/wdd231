@@ -21,6 +21,29 @@ document.querySelector("#form-info").innerHTML = `
 <p><strong>Name of Organization</strong>: ${formInformation.get('organizationName')}</p>
 <p> <strong>Membership Level:</strong> ${formInformation.get('level')}</p>
 <p> <strong>Business / Organization Description:</strong> ${formInformation.get('description')}</p>
-<p> <strong>Registration Requested on:</strong> ${formInformation.get('timestamp') }</p>
+<p> <strong>Registration Requested on:</strong> ${formInformation.get('timestamp')}</p>
 `;
+
+
+
+let current = Date.now(); // current time
+let previousVisit = window.localStorage.getItem("lastVisit"); // get previous visit time
+localStorage.setItem("lastVisit", current); // store current time for next visit
+
+if (!previousVisit) {
+    console.log("This is your first visit");
+} else {
+    let timeDifference = (current - previousVisit) / 86400000; // calculate difference in days: 1000*60-second*00-minutes*24-hours
+    if (timeDifference < 1) {
+        console.log("You returned so soon");
+    } else if (timeDifference === 1) {
+        console.log("It has been 1 day since your last visit");
+    } else {
+        console.log(`Your last visit was ${timeDifference.toFixed(0)} days ago`);
+    }
+}
+
+
+
+
 

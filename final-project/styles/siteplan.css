@@ -29,13 +29,13 @@ header,
 footer {
     font-family: "Marcellus", serif;
     font-weight: 400;
-    font-style:normal;
+    font-style: normal;
     text-align: center;
     background-color: var(--secondary-color);
     padding: 5px;
     color: #f5f0f0;
     font-family: "Marcellus", Georgia, "Times New Roman", serif;
-    line-height: 1.2;
+    line-height: 2.6;
 }
 
 header,
@@ -53,7 +53,8 @@ section {
     margin: 10px;
 }
 
-.small img, .large img {
+.small img,
+.large img {
     display: block;
     max-width: 100%;
     height: auto;

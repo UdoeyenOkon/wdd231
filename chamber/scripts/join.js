@@ -80,19 +80,18 @@ document.addEventListener('DOMContentLoaded', () => {
     createMembershipCard(membershiplevels);
 });
 
-    function showMembershipLevelDetails(membershiplevel) {
-        const membershipLevelDetails = document.querySelector("#membershipLevelDetails");
-        membershipLevelDetails.innerHTML = "";
-        membershipLevelDetails.innerHTML = ` 
+function showMembershipLevelDetails(membershiplevel) {
+    const membershipLevelDetails = document.querySelector("#membershipLevelDetails");
+    membershipLevelDetails.innerHTML = "";
+    membershipLevelDetails.innerHTML = ` 
       <div>
         <h3>${membershiplevel.name}</h3>
         <button class="close-button">❌</button>
       </div>
       <p>${membershiplevel.benefits.join(' * ')}</p>
     `;
-        membershipLevelDetails.showModal();
-        let closeModal = document.querySelector(".close-button");
-        closeModal.addEventListener("click", () => membershipLevelDetails.close());
-    }
+    membershipLevelDetails.showModal();
+    let closeModal = document.querySelector(".close-button");
+    closeModal.addEventListener("click", () => membershipLevelDetails.close());
+}
 
-  

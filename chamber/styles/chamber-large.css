@@ -1,12 +1,25 @@
 @media (min-width: 730px) {
 
     header span {
-            font-size: 1.8rem;
+        font-size: 1.5rem;
+        /* text-transform: uppercase; */
     }
-        
-    /* header {
-        grid-template-columns: 24px auto;
-    } */
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    .header-logo {
+        grid-column: 1/2;
+    }
+
+    .navigation {
+        grid-column: 2/3;
+        background-color: #191f24;
+    }
+
+
 
     .hamburger {
         display: none;
@@ -49,7 +62,7 @@
     .event-highlight {
         display: flex;
     }
-    
+
 
     #forecast {
         /* display: grid; */
@@ -74,10 +87,7 @@
         top: 25%;
     }
 
-
-
-
-    /* ..............THANK YOU FORM..................... */
+    /* ..............DISCOVER..................... */
 
 
 
