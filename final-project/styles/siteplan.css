@@ -60,9 +60,9 @@ section {
     height: auto;
 }
 
-.large {
+/* .large {
     display: none;
-}
+} */
 
 .large,
 .small {
@@ -70,7 +70,7 @@ section {
     margin: 15px;
 }
 
-
+/* 
 @media (min-width: 768px) {
 
     .large {
@@ -83,4 +83,4 @@ section {
         display: none;
     }
 
-}
+} */
