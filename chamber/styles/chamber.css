@@ -159,6 +159,7 @@ footer {
     text-align: center;
     background-color: var(--header-footer-background);
     color: var(--text-on-header-footer);
+    min-height: 600px;
 
 }
 
@@ -675,7 +676,7 @@ input[type="submit"]:hover {
 /* ..............DISCOVER..................... */
 #businessCard {
     margin: 1rem 5px;
-    min-height: 600px;
+    min-height: 800px;
 
 }
 
