@@ -159,7 +159,7 @@ footer {
     text-align: center;
     background-color: var(--header-footer-background);
     color: var(--text-on-header-footer);
-    min-height: 600px;
+    min-height: 480px;
 
 }
 
