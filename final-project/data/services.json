@@ -1,0 +1,77 @@
+{
+    "title": "Professional services, Construction, and Equipment",
+    "services": [
+        {
+            "type": "Arbitration",
+            "description": "Independent resolution of construction disputes through arbitration instead of litigation.",
+            "feesRates": "1% of the claims",
+            "availableDiscount": "No"
+        },
+        {
+            "type": "Construction Contract",
+            "description": "Execution of residential, commercial, industrial, and infrastructure construction projects from inception to completion.",
+            "feesRates": "15% of Estimated Total Cost (ETC)",
+            "availableDiscount": "Negotiable"
+        },
+        {
+            "type": "Contract Administration",
+            "description": "Management of construction contracts, including payment certification, variations, claims, and compliance with contract conditions.",
+            "feesRates": "Professional scale of fees",
+            "availableDiscount": "Negotiable"
+        },
+        {
+            "type": "Design and Build",
+            "description": "Integrated design and construction service delivered under a single contract for improved coordination and cost efficiency.",
+            "feesRates": "Professional scale of fees for design + 15% of ETC",
+            "availableDiscount": "40%"
+        },
+        {
+            "type": "Internship",
+            "description": "Practical training and mentorship for students and graduates pursuing careers in construction and quantity surveying.",
+            "feesRates": "Free of Charges",
+            "availableDiscount": "Allowances provided"
+        },
+        {
+            "type": "Project Management",
+            "description": "Planning, coordinating, monitoring, and controlling construction projects to achieve scope, time, cost, and quality objectives.",
+            "feesRates": "1% of ETC",
+            "availableDiscount": "Negotiable"
+        },
+        {
+            "type": "Quantity Surveying",
+            "description": "Professional cost management services including estimating, Bill of Quantities (BOQ), material scheduling, cost planning, tender analysis, valuations, and final accounts.",
+            "feesRates": "Professional scale of fees",
+            "availableDiscount": "Negotiable"
+        },
+        {
+            "type": "Big Mixer",
+            "description": "Heavy-duty concrete mixer available for hire on large construction projects.",
+            "feesRates": "₦15,000/hr day",
+            "availableDiscount": "Yes"
+        },
+        {
+            "type": "Small Mixer",
+            "description": "Portable concrete mixer suitable for small to medium-sized construction works.",
+            "feesRates": "₦5,000/hr day",
+            "availableDiscount": "Yes"
+        },
+        {
+            "type": "Compactor",
+            "description": "Compaction equipment for soil, sub-base, and pavement preparation available for hire.",
+            "feesRates": "₦15,000/hr day",
+            "availableDiscount": "Yes"
+        },
+        {
+            "type": "Scaffolding",
+            "description": "Scaffolding system available for hire to provide safe access during building construction and maintenance.",
+            "feesRates": "₦3,000/stand/storey floor/day",
+            "availableDiscount": "Yes"
+        },
+        {
+            "type": "Light Equipment",
+            "description": "Various light construction tools and equipment available for short- or long-term rental.",
+            "feesRates": "Negotiable",
+            "availableDiscount": "No"
+        }
+    ]
+}
