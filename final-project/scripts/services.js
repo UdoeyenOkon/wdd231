@@ -3,19 +3,27 @@ const url = "https://udoeyenokon.github.io/wdd231/final-project/data/services.js
 
 let professionalServices = [];
 
-async function getBusinessData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
-
-    professionalServices = data.professionalServices;
-
-    DisplayProfessionalServicesCard(professionalServices);
+async function getProfessionalServicesData() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            professionalServices = data.professionalServices;
+        } else {
+            throw Error(await response.text());
+        }
+    }
+    catch (error) {
+        console.log(error);
+    }
+    
+    createProfessionalServicesCard(professionalServices);
 }
 
 getProfessionalServicesData();
 
-createProfessionalServicesCard(data);
+createProfessionalServicesCard(professionalServices);
 const allLink = document.querySelector("#all");
 allLink.addEventListener("click", () => {
     event.preventDefault();
@@ -43,7 +51,7 @@ Equipmentink.addEventListener("click", () => {
 function createProfessionalServicesCard(serviceCardToDisplay) {
     serviceCardToDisplay.forEach((x) => {
         let professionalServiceCard = document.createElement("p");
-        professionalServiceCard.innerHTML = `${x.Services.type}`
+        professionalServiceCard.innerHTML = `${x.type}`
         professionalServiceCard.addEventListener("click", () => showDetails(x));
         document.querySelector("#professional-service-card").appendChild(professionalServiceCard);
     });
