@@ -1,22 +1,16 @@
 
 const url = "https://udoeyenokon.github.io/wdd231/final-project/data/services.json";
 
-// let professionalServices = [];
+let professionalServices = [];
 
-async function getProfessionalServicesData() {
-    try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            console.log(data);
-            displayResults(data);
-        } else {
-            throw Error(await response.text());
-        }
-    }
-    catch (error) {
-        console.log(error);
-    }
+async function getBusinessData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+
+    professionalServices = data.professionalServices;
+
+    DisplayProfessionalServicesCard(professionalServices);
 }
 
 getProfessionalServicesData();
