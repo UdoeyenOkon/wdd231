@@ -48,6 +48,10 @@
      font-size: xx-large;
  }
 
+ .message {
+     font-size: x-large;
+ }
+
  .details {
      display: grid;
      grid-template-columns: 1fr 1fr;
@@ -62,6 +66,27 @@
      grid-column: span 2;
      grid-row: 2/3;
  }
+
+
+ .offer {
+     grid-column: 2/3;
+    grid-row: 1/2;
+ }
+
+ #professional-service-card {
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

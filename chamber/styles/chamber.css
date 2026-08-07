@@ -125,8 +125,7 @@ header span {
 }
 
 .navigation.show {
-    display: flex;
-
+    display: block;
 }
 
 .navigation ul {
@@ -135,12 +134,21 @@ header span {
     padding: 15px;
 }
 
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+
+
 .navigation a {
     display: block;
     padding: 5px 10px;
     text-decoration: none;
     color: var(--text-on-header-footer);
     text-align: start;
+    /* border-bottom: 1px solid #e2d2d2; */
 }
 
 .active {

@@ -17,9 +17,14 @@
     .navigation {
         grid-column: 2/3;
         background-color: #191f24;
+        display: flex;
     }
 
-
+      
+    .navigation ul {
+         display: flex;
+         column-gap: 20px;
+     }
 
     .hamburger {
         display: none;
@@ -30,14 +35,7 @@
         margin: 0 auto;
     } */
 
-    .navigation {
-        display: flex;
-    }
-
-    .navigation ul {
-        display: flex;
-        column-gap: 20px;
-    }
+   
 
     /* FOOTER */
     footer {

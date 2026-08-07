@@ -57,15 +57,23 @@
     <main>
         <h1>Home</h1>
 
+
+
         <div class="hero">
             <img src="images/my-potrait-picture.webp" alt="">
+
+           
+
             <div class="highlight">
-                <p>We design, build, consult,</p>
-                <p>and manage your</p>
-                <p>construction projects</p>
+                <div id="visitor-info" class="overlay">
+                    <div class="message">
+                        <p id="visit-message"></p>
+                        <button id="close-btn">❌</button>
+                    </div>
+                </div>
+                <p>We design, build, <br>consult, and manage your <br>construction projects</p>
             </div>
         </div>
-
 
 
         <div class="details">
@@ -114,13 +122,17 @@
                     <li><a href="#" id="equipment">Equipment</a></li>
                 </ul>
                 <div id="professional-service-card"></div>
-
             </section>
 
-            <section class="button">
-                <a href="contact.html">Tell Us Your Requirements</a>
-            </section>
+                <section class="button">
+                    <a href="#">Tell Us Your Requirements</a>
+                </section>
+
         </div>
+
+        <dialog id="detailed-services"></dialog>
+        
+    
 
     </main>
 
