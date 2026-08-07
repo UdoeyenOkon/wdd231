@@ -89,7 +89,7 @@ if (!previousVisit) {
     if (daysDifference < 1) {
         message = "Back so soon! Awesome!";
     } else if (daysDifference === 1) {
-        message = "You last visited 1-day ago";
+        message = "You visited 1-day ago";
     } else {
         message = `You visited ${daysDifference.toFixed(0)} days ago`;
     }
