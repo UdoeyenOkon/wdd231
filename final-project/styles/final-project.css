@@ -149,9 +149,9 @@ footer {
     min-height: 550px;
 }
 
-/* footer div {
+footer div {
     padding: .5rem;
-} */
+}
 
 .social-media {
     display: flex;
@@ -418,7 +418,7 @@ h3 {
 
 .portfolio-photo button {
     position: absolute;
-    bottom: 8%;
+    bottom: 10%;
     left: 5%;
     height: 44px;
     border-radius: 5px;
