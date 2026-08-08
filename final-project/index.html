@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/final-project.css">
     <link rel="stylesheet" href="styles/final-project-large.css">
     <script src="scripts/final-project.js" type="module"></script>
-    <script src="scripts/services.js" defer></script>
+    <script src="scripts/services.js" type="module"></script>
 
 
 
@@ -114,6 +114,7 @@
 
             <section class="offer">
                 <h2>We Offer:</h2>
+                <p class="sub-tittle">Services, Construction, and Equipment</p>
                 <p class="note2">Click on each Service Card for Details***</p>
 
                 <ul>
@@ -132,9 +133,23 @@
 
         <dialog id="detailed-services"></dialog>
         
-    
+        <div class="weather-report">
+            <h2>Uyo Weather Report</h2>
+            <div id="current">
+                <p>Current Temperature: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="#" alt="#">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        
+            <div id="forecast"></div>
+        </div>
+
 
     </main>
+
+   
 
     <footer>
         <div>

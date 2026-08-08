@@ -142,12 +142,11 @@ header span {
 
 /* FOOTER */
 footer {
-    /* padding: .5rem 5px; */
+    padding: .5rem 5px;
     text-align: center;
     background-color: var(--header-footer-background);
     color: var(--text-on-header-footer);
     min-height: 450px;
-
 }
 
 .social-media {
@@ -232,7 +231,7 @@ main {
 
 .highlight {
     position: absolute;
-    top: 30px;
+    top: 5px;
     left: 1%;
     font-size: small;
 }
@@ -245,6 +244,11 @@ section {
 
 h2 {
     text-align: center;
+}
+
+.sub-tittle {
+    text-align: center;
+    font-size: x-large;
 }
 
 .button a {
@@ -330,6 +334,54 @@ h3 {
     border: none;
     display: block;
 }
+
+/* ................Uyo Weather...... */
+.weather-report {
+    font-size: 85%;
+    background-color: #e2d2d295;
+    margin-top: 5px;
+    min-height: 800px;
+}
+
+.weather-report div {
+    padding: 20px;
+}
+
+.weather-report h2 {
+    text-align: start;
+    margin-top: 10px;
+}
+
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    padding: 0.1rem;
+    list-style: none;
+    text-align: start;
+    margin: 5px;
+    gap: 5px;
+}
+
+.forecast-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 180px;
+    text-align: center;
+}
+
+#current {
+    text-align: center;
+}
+
+#forecast img, #weather-icon {
+    width: 32px;
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0 auto;
+    
+}
+
 
 
 
@@ -545,60 +597,6 @@ h3 {
     text-align: start;
 }
 
-.weather-report {
-    font-size: 85%;
-    box-sizing: border-box;
-    border: 1px solid rgb(0 0 0 / 10%);
-    border-radius: 5px;
-    background-color: #e2d2d295;
-    margin-top: 5px;
-    margin: 0 auto;
-}
-
-.weather-report h2 {
-    text-align: start;
-    /* background: white; */
-    margin-top: 10px;
-}
-
-#forecast div {
-    display: grid;
-    grid-template-columns: auto 1fr 24px 1fr;
-    box-sizing: border-box;
-    /* border: 1px solid rgb(65, 60, 60); */
-    padding: 0.1rem;
-    list-style: none;
-    text-align: start;
-    /* border-radius: 5px; */
-    margin: 5px;
-    gap: 5px;
-}
-
-#forecast {
-    display: grid;
-    grid-template-columns: 1fr;
-    min-height: 180px;
-    /* margin: 0 auto; */
-}
-
-#current {
-    text-align: center;
-}
-
-#forecast img {
-    width: 100%;
-    aspect-ratio: 1;
-}
-
-
-#weather-icon {
-    width: 3%;
-    aspect-ratio: 1;
-}
-
-#forecast div strong {
-    font-size: large;
-}
 
 .contact {
     list-style: none;

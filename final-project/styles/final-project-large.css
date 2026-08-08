@@ -43,42 +43,51 @@
 
     }
 
-/* ..................HOME...................... */
- .highlight {
-     font-size: xx-large;
- }
+    /* ..................HOME...................... */
+    .highlight {
+        font-size: xx-large;
+    }
 
- .message {
-     font-size: x-large;
- }
+    .message {
+        font-size: x-large;
+    }
 
- .details {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
- }
+    .details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
- .about {
-     grid-column: 1/2;
-     grid-row: 1/2;
- }
+    .about {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
 
- .button {
-     grid-column: span 2;
-     grid-row: 2/3;
- }
-
-
- .offer {
-     grid-column: 2/3;
-    grid-row: 1/2;
- }
-
- #professional-service-card {
-     grid-template-columns: 1fr 1fr 1fr 1fr;
- }
+    .button {
+        grid-column: span 2;
+        grid-row: 2/3;
+    }
 
 
+    .offer {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 
+    #professional-service-card {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+
+    /* ................Uyo Weather...... */
+   .weather-report {
+        min-height: 550px;
+   }
+   
+    #forecast {
+    
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
 
 
 
@@ -109,12 +118,7 @@
     }
 
 
-    #forecast {
-        /* display: grid; */
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-        /* max-width: 900px; */
-    }
+  
 
     /* ..............JOIN FORM..................... */
     .reg-form {
