@@ -146,12 +146,12 @@ footer {
     text-align: center;
     background-color: var(--header-footer-background);
     color: var(--text-on-header-footer);
-    min-height: 500px;
+    min-height: 550px;
 }
 
-footer div {
-    padding: .5rem 5px;
-}
+/* footer div {
+    padding: .5rem;
+} */
 
 .social-media {
     display: flex;
@@ -392,6 +392,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-gap: 5px;
+    min-height: 3000px;
 }
 
 .portfolio-photo section {
