@@ -116,10 +116,7 @@ async function displayWeather() {
 
         const { current, forecast } = await getWeather();
 
-        // ========================================
-        // CURRENT WEATHER
-        // ========================================
-
+        //......................... CURRENT WEATHER............................
         currentTemperature.innerHTML =
             `${current.main.temp}&deg;C`;
 
@@ -138,10 +135,8 @@ async function displayWeather() {
             currentDescription;
 
 
-        // ========================================
-        // 4-DAY FORECAST
-        // ========================================
 
+        // ..........4-DAY FORECAST.........................................
         forecastContainer.innerHTML = "";
 
         // Select the forecast entries at 12:00
@@ -209,7 +204,7 @@ async function displayWeather() {
 
             forecastContainer.innerHTML += forecastHtml;
         });
-        
+
     } catch (error) {
 
         console.error(

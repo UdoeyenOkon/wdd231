@@ -146,7 +146,11 @@ footer {
     text-align: center;
     background-color: var(--header-footer-background);
     color: var(--text-on-header-footer);
-    min-height: 450px;
+    min-height: 500px;
+}
+
+footer div {
+    padding: .5rem 5px;
 }
 
 .social-media {
@@ -374,12 +378,53 @@ h3 {
     text-align: center;
 }
 
-#forecast img, #weather-icon {
+#forecast img,
+#weather-icon {
     width: 32px;
     height: auto;
     aspect-ratio: 1;
     margin: 0 auto;
-    
+
+}
+
+/* ..................PROJECT PORTFOLIO...................... */
+.portfolio-photo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 5px;
+}
+
+.portfolio-photo section {
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 0.5rem;
+    background-color: #e3dfdf;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+}
+
+.portfolio-photo section>* {
+    margin: 0.1rem;
+}
+
+.portfolio-photo img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 1rem #4a3939;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-photo button {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    height: 44px;
+    border-radius: 5px;
+}
+
+.portfolio-photo button:hover {
+    background-color: #e3dfdf;
 }
 
 
@@ -415,20 +460,7 @@ h3 {
 }
 
 
-.grid-card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: 5px;
-}
 
-.grid-card section {
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 0.5rem;
-    background-color: #e3dfdf;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 /* .grid-card section a {
     color: var(--text-on-main-page);
@@ -458,16 +490,7 @@ h3 {
     padding: 10px;
 }
 
-.grid-card section>* {
-    margin: 0.1rem;
-}
 
-.grid-card img {
-    border: 1px solid #fff;
-    box-shadow: 0 0 1rem #4a3939;
-    width: 100%;
-    height: auto;
-}
 
 
 .list section {
