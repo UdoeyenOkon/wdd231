@@ -89,6 +89,14 @@
         gap: 10px;
     }
 
+    /* ..................PROJECT PORTFOLIO...................... */
+    .portfolio-photo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 5px;
+        min-height: 1100px;
+    }
+
 
 
 
