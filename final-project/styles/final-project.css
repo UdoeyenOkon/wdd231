@@ -324,7 +324,7 @@ h2 {
     color: rgb(33, 31, 31);
 }
 
-#detailed-services div {
+#detailed-services div, #project-details div {
     display: grid;
     grid-template-columns: auto 44px;
     gap: 10px;
@@ -332,8 +332,7 @@ h2 {
     ;
 }
 
-.close-button,
-h3 {
+.close-button, h3, h2 {
     background: none;
     border: none;
     display: block;
@@ -402,6 +401,10 @@ h3 {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
+    position: relative;
+}
+
+.portfolio-photo section div {
     position: relative;
 }
 
