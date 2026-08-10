@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Kaevikon Ventures-Nigeria</title>
     <meta name="description"
-        content="This page showcases past projects, equipment, services completed by Kaevikon Ventures">
+        content="This page presents a form to facilitates and elicits requirements from customers Kaevikon Ventures">
     <meta name="author" content="Udoeyen Aniefiok OKON">
     <meta property="og:title" content="Kaevikon Ventures, Nigeria">
     <meta property="og:description" content=">We design, build, consult, and manage your construction and IT projects.">
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/final-project.css">
     <link rel="stylesheet" href="styles/final-project-large.css">
     <script src="scripts/final-project.js" type="module"></script>
-    <script src="scripts/portfolio.js" defer></script>
+    <script src="scripts/enquiry.js" defer></script>
 </head>
 
 <body>
@@ -40,8 +40,8 @@
             <nav id="nav-bar" class="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="portfolio.html">Project Portfolio</a></li>
-                    <li><a href="enquiry.html">Contact Us</a></li>
+                    <li><a href="portfolio.html">Project Portfolio</a></li>
+                    <li class="active"><a href="enquiry.html">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -49,13 +49,61 @@
 
     </header>
 
-    <main>
-        <h1>Project Portfolio</h1>
-
-        <div class="portfolio-photo"></div>
-
-        <dialog id="project-details"></dialog>
-
+    <main class="reg-form">
+        <div class=" form1">
+            <h1>Enquiry Form</h1>
+            <p><span id="note">(Fields with (*) are required)</span></p>
+    
+            <form action="thankyou.html" method="get" class="contact-form">
+    
+                <div>
+                    <label for="firstName">First Name*<input type="text" id="firstName" name="firstName" required
+                            autocomplete="given-name" title="firstName"></label>
+                </div>
+                <div>
+                    <label for="lastName">Last Name*<input type="text" id="lastName" name="lastName" required
+                            autocomplete="family-name" title="lastName"></label>
+                </div>
+                <div>
+                    <label for="title">If Represents Organisation, Indicate Your Title</label>
+                    <input type="text" id="title" name="title" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}"
+                        title="title" placeholder="Only letters, spaces, & hyphens (Minimum of 7 characters)">
+                </div>
+                <div>
+                    <label for="email">Contact Email Address*<input type="email" id="email" name="email" title="email"
+                            required placeholder="emailaddress@gmail.org" autocomplete="email"></label>
+                </div>
+                <div>
+                    <label for="telephone">Contact Telephone Number (Optional)<input type="tel" id="telephone" required
+                            title="telephone" autocomplete="tel" name="telephone"></label>
+                </div>
+                <div>
+                    <label for="organizationName">Business / Organization's Name*<input type="text"
+                            title="organizationName" id="organizationName" name="organizationName" required
+                            autocomplete="organization"></label>
+                </div>
+    
+                <div>
+                    <div>
+                        <label for="service">Services Required*</label>
+                        <select name="product" id="service" required>
+                            <option value="" disabled selected>Select the Service Required... &#9662;</option>
+                            <!-- options will go here -->
+                        </select>
+                    </div>
+                </div>
+    
+                <div>
+                    <label>Business/Organization's description (Optional)<textarea name="description"
+                            title="description" id="details"></textarea></label>
+                </div>
+    
+                <input id="timestamp" type="hidden" name="timestamp" title="timestamp"></label>
+    
+                <input type="submit" value="Register">
+    
+            </form>
+        </div>
     </main>
 
    

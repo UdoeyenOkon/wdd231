@@ -41,7 +41,7 @@ function createProjectAlbum(projects) {
         image.setAttribute("height", "375");
 
         let button = document.createElement("button");
-        button.innerText = 'Learn More';
+        button.innerText = 'See More Details';
 
         let imageDescription = document.createElement("p");
         imageDescription = `Photo Showing the ${project.imageShowing}.`;
@@ -54,9 +54,11 @@ function createProjectAlbum(projects) {
         button.addEventListener("click", () => showProjectDetails(project));
         document.querySelector(".portfolio-photo").appendChild(album);
 
+    });
+}
 
-    function showProjectDetails(project) {
-        const detailsOfProjects = document.querySelector("#project-details");
+function showProjectDetails(project) {
+    const detailsOfProjects = document.querySelector("#project-details");
     detailsOfProjects.innerHTML = "";
     detailsOfProjects.innerHTML = `
     <div><h3>${project.name}</h3>
@@ -68,35 +70,6 @@ function createProjectAlbum(projects) {
     detailsOfProjects.showModal()
     let closeModal = document.querySelector(".close-button");
     closeModal.addEventListener("click", () => detailsOfProjects.close());
-}
-
-
-
-
-
-
-        
-        // let details = document.createElement("p");
-        // let serviceProvided = document.createElement("p");
-        // let yearCompletedOrAcquired = document.createElement("p");
-        // let image = document.createElement("p");
-        
-
-        // name.textContent = project.name;
-        // details.innerHTML = `<span class="label"> <strong>Details: </strong></span>${project.details}`;
-        // serviceProvided.innerHTML = `<span class="label"> <strong>Srvice Provided: </strong></span>${project.servicesProvided}`;
-        // yearCompletedOrAcquired.innerHTML = `<span class="label"> <strong>Year Completed or Acquired: </strong></span>${project.yearCompletedOrAcquired}`;
-        
-
-        // album.appendChild(name);
-        // album.appendChild(details);
-        // album.appendChild(serviceProvided);
-        // album.appendChild(yearCompletedOrAcquired);
-        // album.appendChild(image);
-        // album.appendChild(img);
-
-        // document.querySelector(".photos").appendChild(album);
-    });
 }
 
 
