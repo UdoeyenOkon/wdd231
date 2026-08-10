@@ -53,9 +53,9 @@
         <div class=" form1">
             <h1>Enquiry Form</h1>
             <p><span id="note">(Fields with (*) are required)</span></p>
-    
+
             <form action="thankyou.html" method="get" class="contact-form">
-    
+
                 <div>
                     <label for="firstName">First Name*<input type="text" id="firstName" name="firstName" required
                             autocomplete="given-name" title="firstName"></label>
@@ -66,8 +66,9 @@
                 </div>
                 <div>
                     <label for="title">If Represents Organisation, Indicate Your Title</label>
-                    <input type="text" id="title" name="title" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}"
-                        title="title" placeholder="Only letters, spaces, & hyphens (Minimum of 7 characters)">
+                    <input type="text" id="title" name="title" autocomplete="organization-title"
+                        pattern="[A-Za-z \-]{7,}" title="title"
+                        placeholder="Only letters, spaces, & hyphens (Minimum of 7 characters)">
                 </div>
                 <div>
                     <label for="email">Contact Email Address*<input type="email" id="email" name="email" title="email"
@@ -82,7 +83,7 @@
                             title="organizationName" id="organizationName" name="organizationName" required
                             autocomplete="organization"></label>
                 </div>
-    
+
                 <div>
                     <div>
                         <label for="service">Services Required*</label>
@@ -92,44 +93,53 @@
                         </select>
                     </div>
                 </div>
-    
+
                 <div>
                     <label>Business/Organization's description (Optional)<textarea name="description"
                             title="description" id="details"></textarea></label>
                 </div>
-    
+
                 <input id="timestamp" type="hidden" name="timestamp" title="timestamp"></label>
-    
+
                 <input type="submit" value="Register">
-    
+
             </form>
         </div>
     </main>
 
-   
+
 
     <footer>
-        <div>
-            <p><strong>Contact:</strong></p>
-            <p>152, Ekpri Nsukara road,</p>
-            <p>Uyo-Akwa Ibom State</p>
-            <p><span>Telephone:</span>+234 803 675 0522</p>
-            <p><span>Email:</span>okonudoeyen@gmail.com</p>
+        <div class="footer">
+            <div>
+                <p><strong>Contact:</strong></p>
+                <p>152, Ekpri Nsukara road,</p>
+                <p>Uyo-Akwa Ibom State</p>
+                <p><span>Telephone:</span>+234 803 675 0522</p>
+                <p><span>Email:</span>okonudoeyen@gmail.com</p>
+            </div>
+    
+            <div class="social-media">
+                <a href="https://web.facebook.com/login/" target="_blank" aria-label="facebook"><img
+                        src="images/facebook.svg" alt="facebook" width="16" height="16" loading="lazy"></a>
+                <a href="https://x.com/twitt_login?lang=en" target="_blank" aria-label="twitter"><img
+                        src="images/twitter-x.svg" alt="Twitter twitter-x" width="16" height="16" loading="lazy"></a>
+                <a href="https://www.linkedin.com/in/udoeyen-okon-a13135124/" target="_blank" aria-label="linkedin"><img
+                        src="images/linkedin.svg" alt="linkedin" width="16" height="16" loading="lazy"></a>
+                <a href="https://github.com/UdoeyenOkon" target="_blank" aria-label="github"><img src="images/github.svg"
+                        alt="Github" width="16" height="16" loading="lazy"></a>
+            </div>
+    
+            <div>
+                <p>WDD231 Final Project | Udoeyen OKON | Nigeria</p>
+                <p>©<span id="CurrentYear"></span> | Kaevikon Ventures-Nigeria</p>
+                <p class="modified">Last Modified: <span id="LastModified"></span></p>
+            </div>
         </div>
-
-        <div class="social-media">
-            <a href="https://web.facebook.com/login/" target="_blank" aria-label="facebook"><img src="images/facebook.svg" alt="facebook" width="16" height="16" loading="lazy"></a>
-            <a href="https://x.com/twitt_login?lang=en" target="_blank" aria-label="twitter"><img src="images/twitter-x.svg" alt="Twitter twitter-x" width="16" height="16" loading="lazy"></a>
-            <a href="https://www.linkedin.com/in/udoeyen-okon-a13135124/" target="_blank" aria-label="linkedin"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16" loading="lazy"></a>
-            <a href="https://github.com/UdoeyenOkon" target="_blank" aria-label="github"><img src="images/github.svg" alt="Github" width="16" height="16" loading="lazy"></a>
-
-        </div>
-
-        <div>
-            <p>WDD231 Final Project | Udoeyen OKON | Nigeria</p>
-            <p>©<span id="CurrentYear"></span> | Kaevikon Ventures-Nigeria</p>
-            <p class="modified">Last Modified: <span id="LastModified"></span></p>
-        </div>
+    
+    
+        <a href="https://www.loom.com/share/b14f3af491a3436b82319550ac49afd1" target="_blank">This is the link to the Presentation Video</a>
+    
     </footer>
 </body>
 

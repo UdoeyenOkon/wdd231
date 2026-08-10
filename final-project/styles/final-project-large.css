@@ -36,11 +36,14 @@
     }
 
     /* FOOTER */
+
     footer {
+        min-height: 350px;
+    }
+
+    .footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        min-height: 280px;
-
     }
 
     /* ..................HOME...................... */
@@ -79,19 +82,19 @@
 
 
     /* ................Uyo Weather...... */
-   .weather-report {
+    .weather-report {
         min-height: 550px;
-   }
-   
+    }
+
     #forecast {
-    
+
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;
     }
 
     /* ..................PROJECT PORTFOLIO...................... */
     .portfolio-photo {
-       min-height: 1100px;
+        min-height: 1100px;
     }
 
 
