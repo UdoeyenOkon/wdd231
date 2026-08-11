@@ -102,8 +102,13 @@ document.getElementById("close-btn").addEventListener("click", () => {
 
 
 
-// ..............WEATHER FORCASTING OBJECT...................................
+
+
+
+// ..............WEATHER FORCASTING OBJECT.............................................................
+
 import { getWeather } from "./uyo-weather.mjs";
+
 const currentTemperature = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
@@ -158,11 +163,11 @@ async function displayWeather() {
             const forecastDescription =
                 forecastItem.weather[0].description;
 
-            // Probability of precipitation
+            // Probability of precipitation........................
             const rainProbability =
                 Math.round(forecastItem.pop * 100);
 
-            // Wind speed
+            // Wind speed..........................................
             const windSpeed =
                 forecastItem.wind.speed;
 
