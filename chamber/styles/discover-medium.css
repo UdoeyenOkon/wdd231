@@ -2,13 +2,11 @@
 
     /* ..............DISCOVER..................... */
     #businessCard div {
-        display: grid;
         grid-template-areas:
             "photo title"
             "photo description"
             "photo address"
             "photo button";
-        grid-template-columns: 320px 1fr;
     }
 
     #businessCard figure img:hover {
