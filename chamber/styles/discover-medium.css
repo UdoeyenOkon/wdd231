@@ -58,6 +58,11 @@
     }
 
     #businessCard div {
+        grid-template-areas:
+            "title title button"
+            "description description button"
+            "address address button"
+            "photo photo button";
         margin: 0;
     }
 
